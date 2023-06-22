@@ -178,6 +178,7 @@
   transition: .5s ease;
   display: block;
   padding: 5px;
+  border-radius: 5px;
 }
 .navbar .links > *:hover {
   background-color: #00f;
