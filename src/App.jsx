@@ -8,7 +8,6 @@ import Three from './components/Three';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-
 function App() {
 
   return (
