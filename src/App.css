@@ -177,6 +177,7 @@
   font-size: 1.3rem;
   transition: .5s ease;
   display: block;
+  padding: 5px;
 }
 .navbar .links > *:hover {
   background-color: #00f;
