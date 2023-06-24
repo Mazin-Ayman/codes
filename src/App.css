@@ -210,7 +210,7 @@
     padding: .8rem;
   }
   .navbar + * {
-    margin-top: 4rem;
+    margin-top: 7rem;
   }
   .navbar .links * {
     font-size: .9rem; 
