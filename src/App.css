@@ -161,7 +161,7 @@
 }
 
 
-.navbar .links *{
+.navbar .links * {
   text-decoration: none;
   color: blue;
   margin-left: 10px;
@@ -212,6 +212,8 @@
   }
   .navbar .links * {
     font-size: .9rem; 
-    margin-left:  5px;   } 
+    margin-left:  5px; 
+    padding: 2.5px; 
+  } 
 }
 
