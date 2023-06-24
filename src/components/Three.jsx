@@ -17,13 +17,13 @@ const Three = () => {
   }
   return (
     <main className="three">
-      <form onSubmit={(e) => e.target.preventDefault()}>
+      <form onSubmit={(e) => e.target.preventDefault()} style={{width: '100%'}}>
         <Stack sx={{ width: '100%' }}>
           <Autocomplete
             disablePortal
             id="combo-box-demo"
             options={Object.keys(data)}
-            sx={{ width: 250, backgroundColor: "#fff", borderRadius: 1, '& input': { textAlign: 'center' }, boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px' }}
+            sx={{ width: '80%', backgroundColor: "#fff", borderRadius: 1, '& input': { textAlign: 'center' }, boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px' }}
             inputValue={id}
             onInputChange={(e, v) => {
               setId(v.toString())
