@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo" onClick={() => navigate('/')}>القائمة</div>
+      <div className="logo" onClick={() => navigate('/')}>الرئيسيةdiv>
       <div className="links">
         <Link to="/">درجة التقييم</Link>
         <Link to="/short">اختصارات الـ Finacle</Link>
