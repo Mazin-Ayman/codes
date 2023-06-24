@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo" onClick={() => navigate('/')}>القائمة</div>
       <div className="links">
-        <Link to="/short">three</Link>
+        <Link to="/short">اختصارات</Link>
         <Link to='/code'>أكواد البنوك</Link>
       </div>
     </nav>
