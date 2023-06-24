@@ -112,9 +112,9 @@
 
 
 
-
-
-
+.bankNameAr {
+  font-weight: bold; 
+}
 
 .bankNameAr,
 .bankNameEn,
@@ -125,6 +125,8 @@
   text-align: center;
   margin: 15px auto;
 }
+
+ 
 
 
 
@@ -178,7 +180,7 @@
 
 
 .navbar + * {
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 
 
