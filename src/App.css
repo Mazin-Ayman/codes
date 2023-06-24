@@ -111,9 +111,8 @@
 }
 
 
-.two form,
-.three form {
-  width: 90%;
+form {
+  width: 100%;
 }
 
 

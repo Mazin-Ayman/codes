@@ -17,7 +17,7 @@ const Three = () => {
   }
   return (
     <main className="three">
-      <form onSubmit={(e) => e.target.preventDefault()} style={{width: '100%'}}>
+      <form onSubmit={(e) => e.target.preventDefault()} style={{ width: '100%' }}>
         <Stack sx={{ width: '100%' }}>
           <Autocomplete
             disablePortal
