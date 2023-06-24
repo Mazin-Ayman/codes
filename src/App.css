@@ -224,5 +224,9 @@
   .navbar + * {
     margin-top: 4rem;
   }
+  .three MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-1uvydh2 {
+    font-size: larger;
+    font-weight: bold;
+  }
 }
 
