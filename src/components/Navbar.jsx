@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo" onClick={() => navigate('/')}>القائمة</div>
       <div className="links">
-        {/* <Link to='/'>الرئيسية</Link> */}
+        <Link to="/short">three</Link>
         <Link to='/code'>أكواد البنوك</Link>
       </div>
     </nav>
