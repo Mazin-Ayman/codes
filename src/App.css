@@ -158,7 +158,6 @@
   direction: rtl;
   background: #eee;
   box-shadow: 1px 2px 1px 2px rgba(255, 255, 255, .2);
-  flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -168,6 +167,11 @@
   cursor: pointer;
 }
 
+.navbar .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .navbar .links *{
   text-decoration: none;
