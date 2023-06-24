@@ -34,7 +34,7 @@ const Three = () => {
               if (e.key === 'Enter') e.preventDefault();
             }}
             onSelect={handler}
-            renderInput={(params) => <TextField {...params} label="اكتب الوظيفة لتعرف الاختصار" sx={{ textAlign: 'center' }} />}
+            renderInput={(params) => <TextField className="three-placeholder" {...params} label="اكتب الوظيفة لتعرف الاختصار" sx={{ textAlign: 'center' }} />}
           // freeSolo
           />
         </Stack>
