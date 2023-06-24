@@ -212,6 +212,6 @@
   }
   .navbar .links * {
     font-size: .9rem; 
-  } 
+    margin-left:  5px;   } 
 }
 
