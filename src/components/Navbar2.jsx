@@ -30,7 +30,7 @@ const Navbar2 = () => {
           navigate('/');
           setLink('one');
         }}>
-          <img className="logo-img" src="./../../newlogo.png" alt="logo(404)"/>
+          <img className="logo-img" src="./../../public/newlogo.png" alt="logo"/>
         </div>
       </nav>
       <div className="links" ref={linksRef}>
