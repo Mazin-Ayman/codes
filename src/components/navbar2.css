@@ -51,8 +51,9 @@ nav {
 
 
 .links {
-  background: rgba(0,0,0,.05);
-  backdrop-filter: blur(6px);
+  /* background: rgba(0,0,0,.05); */
+  background-color: #fff;
+  /* backdrop-filter: blur(6px); */
   z-index: 99999;
   transition: 0.4s ease;
   opacity: 0;
