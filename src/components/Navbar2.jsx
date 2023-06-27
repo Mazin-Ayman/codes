@@ -30,7 +30,7 @@ const Navbar2 = () => {
           navigate('/');
           setLink('one');
         }}>
-          <img className="logo-img" src="https://drive.google.com/file/d/1dSU8Z9ao-PD5g2hyFCqrwUaBGFy0JQ24/view" alt="logo"/>
+          <img className="logo-img" src="https://i.ibb.co/yXLcCm7/newlogo.png" alt="logo"/>
         </div>
       </nav>
       <div className="links" ref={linksRef}>
