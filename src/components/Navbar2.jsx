@@ -26,10 +26,12 @@ const Navbar2 = () => {
           <span></span>
           <span></span>
         </div>
-        <div className="logo" onClick={() => {
-          navigate('/')
-          setLink('one')
-        }}>ABE</div>
+        <div className="logo-box" onClick={() => {
+          navigate('/');
+          setLink('one');
+        }}>
+          <img className="logo-img" src="./../../newlogo.png" alt="logo"/>
+        </div>
       </nav>
       <div className="links" ref={linksRef}>
         <ul>

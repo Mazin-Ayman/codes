@@ -3,7 +3,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 8px 10px;
   background-color: #fff;
   box-shadow: 1px 2px 1px 2px rgba(255,255,255,.15);
 }
@@ -45,8 +45,6 @@ nav {
 .mine.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -8px);
 }
-
-
 
 
 
@@ -104,4 +102,12 @@ nav {
 
   background-color: rgba(12, 148, 225, .5);
 
+}
+
+
+.logo-img {
+  height: 50px;
+  border-radius: 25px;
+  margin: 0;
+  transform: translateY(5.2px);
 }
