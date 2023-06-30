@@ -95,7 +95,8 @@
   box-shadow: 2px 2px 2px 2px rgba(255,255,255,.1);
 }
 
-.two, .three {
+
+.two, .three, .four {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -124,8 +125,7 @@
   position: relative;
   text-align: center;
   margin: 15px auto;
-}
-
+} 
  
 
 
@@ -140,6 +140,32 @@
 .navbar2 + * {
   margin-top: 6rem;
 }
+
+
+
+
+/* 
+ four section
+*/
+
+
+/* .data > * { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/* } */
+
+
+.four .data {
+  margin-top: 1rem;
+}
+
+.four .data * .data-item-value {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+
 
 
 /*     footer      */

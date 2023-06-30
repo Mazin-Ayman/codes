@@ -30,7 +30,7 @@ const Navbar2 = () => {
           navigate('/');
           setLink('one');
         }}>
-          <img className="logo-img" src="https://i.ibb.co/yXLcCm7/newlogo.png" alt="logo"/>
+          <img className="logo-img" src="https://i.ibb.co/yXLcCm7/newlogo.png" alt="logo" />
         </div>
       </nav>
       <div className="links" ref={linksRef}>
@@ -38,6 +38,7 @@ const Navbar2 = () => {
           <li className={link === 'one' ? 'on' : ''}><Link to='/' onClick={(e) => linksClick('one')}>درجة التقييم</Link></li>
           <li className={link === 'two' ? 'on' : ''}><Link to='/code' onClick={(e) => linksClick('two')}>أكواد البنوك</Link></li>
           <li className={link === 'three' ? 'on' : ''}><Link to='/short' onClick={(e) => linksClick('three')}>اختصارات الـ Finacle</Link></li>
+          <li className={link === 'four' ? 'on' : ''}><Link to='/cr' onClick={(e) => linksClick('four')}>الفئات التسليفية الزراعية</Link></li>
         </ul>
       </div>
     </header>
