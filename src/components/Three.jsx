@@ -40,9 +40,18 @@ const Three = () => {
         </Stack>
       </form>
       <div className='data'>
-        {shortcut && <p className='shrt'>{shortcut}</p>}
-        {jobEn && <p className='jben'>{jobEn}</p>}
-        {office && <p className='off'>{office}</p>}
+        {shortcut && <div>
+          <p>الإختصار:</p>
+          <p className='shrt'>{shortcut}</p>
+        </div>}
+        {jobEn && <div>
+          <p>الوظيفة:</p>
+          <p className='jben'>{jobEn}</p>
+        </div>}
+        {office && <div>
+          <p>المختص:</p>
+          <p className='off'>{office}</p>
+        </div>}
       </div>
     </main>
   );

@@ -124,11 +124,23 @@
 .three .data .off{
   position: relative;
   text-align: center;
-  margin: 15px auto;
+  margin: 10px auto;
 } 
  
 
+.three .data > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* row-gap: 5px; */
+}
 
+
+.three .data > div p:first-child {
+  font-weight: bold;
+  margin-left: 4px;
+}
 
 
 
