@@ -6,13 +6,16 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo" onClick={() => navigate('/')}>الرئيسية</div>
+      <div className="logo" onClick={() => navigate("/")}>
+        الرئيسية
+      </div>
       <div className="links">
         <Link to="/">درجة التقييم</Link>
         <Link to="/short">اختصارات الـ Finacle</Link>
-        <Link to='/code'>أكواد البنوك</Link>
+        <Link to="/code">أكواد البنوك</Link>
+        {/* <Link to="/test">test</Link> */}
       </div>
     </nav>
   );
-}
+};
 export default Navbar;

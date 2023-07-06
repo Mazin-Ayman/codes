@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .my-label {
+    @apply text-white font-bold text-lg inline-block ml-1 translate-y-[1px];
+  }
+  .my-input {
+    @apply rounded-md;
+  }
+}

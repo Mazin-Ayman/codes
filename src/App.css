@@ -3,8 +3,8 @@
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: Cairo,sans-serif;
-} 
+  font-family: Cairo, sans-serif;
+}
 
 .one {
   width: 100%;
@@ -17,18 +17,18 @@
 .one input {
   background-color: #fff;
   outline: none;
-  border: 2px solid rgba(255,255,255,.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   padding: 5px 0 5px 0;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
-  box-shadow: 2px 2px 2px 2px rgba(255,255,255,.1);
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.1);
 }
 
 .one input::placeholder {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .one input:focus {
@@ -51,7 +51,7 @@
   padding-right: 8px;
   padding-top: 6px;
   padding-bottom: 6px;
-  border: #fff .5px solid;
+  border: #fff 0.5px solid;
   margin: 15px auto;
   width: 145px;
   text-align: center;
@@ -83,7 +83,7 @@
 
 .error {
   border: none;
-  color: #fff; 
+  color: #fff;
   border-radius: 5px;
   font-size: 12px !important;
   width: auto;
@@ -92,11 +92,12 @@
 .bad,
 .norm,
 .good {
-  box-shadow: 2px 2px 2px 2px rgba(255,255,255,.1);
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.1);
 }
 
-
-.two, .three, .four {
+.two,
+.three,
+.four {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -105,28 +106,24 @@
   color: #fff;
 }
 
-
 .two input::placeholder {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   text-align: center;
 }
 
-
-
 .bankNameAr {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .bankNameAr,
 .bankNameEn,
 .three .data .shrt,
 .three .data .jben,
-.three .data .off{
+.three .data .off {
   position: relative;
   text-align: center;
   margin: 10px auto;
-} 
- 
+}
 
 .three .data > div {
   display: flex;
@@ -136,36 +133,25 @@
   /* row-gap: 5px; */
 }
 
-
 .three .data > div p:first-child {
   font-weight: bold;
   margin-left: 4px;
 }
 
-
-
 /*    navbar     */
-
-
-
 
 .navbar2 + * {
   margin-top: 4rem;
 }
 
-
-
-
 /* 
  four section
 */
-
 
 /* .data > * { */
 /*   display: flex; */
 /*   flex-direction: column; */
 /* } */
-
 
 .four .data {
   margin-top: 1rem;
@@ -177,9 +163,6 @@
   margin-right: 6px;
 }
 
-
-
-
 /*     footer      */
 .footer {
   position: fixed;
@@ -189,7 +172,98 @@
   background: white;
   text-align: center;
   font-weight: 500;
-  font-size: .9rem;
-  padding: .8rem;
+  font-size: 0.9rem;
+  padding: 0.8rem;
 }
 
+.five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-label {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 4px;
+  transform: translateY(1px);
+}
+
+.my-input {
+  border-radius: 6px;
+}
+
+.five select {
+  text-align: center;
+  background-color: white;
+  width: 130px;
+  border: solid rgba(34, 33, 33, 0.5) 2px;
+}
+
+.certVal-con,
+.month-con {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  /* width: 150spx; */
+}
+
+.five #certVal {
+  text-align: center;
+  width: 130px;
+  font-weight: bolder;
+}
+
+.five .outputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.five #certAd,
+.five #certOut {
+  color: black;
+  width: 40px;
+  padding: 0 16px 0 16px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  font-weight: bolder;
+}
+
+.five #select {
+  padding: 4px;
+}
+
+.five #monthVal {
+  font-weight: bolder;
+}
+
+.five .page-title {
+  color: #fff;
+  font-weight: bolder;
+  transform: translateZ(-2px);
+  margin-bottom: 2rem;
+}
+
+.five .outputs span {
+  background-color: #f97316;
+}
+
+.five > a {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  color: #3b82f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+.five > a:visited {
+  color: #316ac7;
+}
+.five > a:hover {
+  text-decoration: underline;
+}
