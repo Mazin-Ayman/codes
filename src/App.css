@@ -267,3 +267,30 @@
 .five > a:hover {
   text-decoration: underline;
 }
+
+.five .form-submit-btn {
+  color: white;
+  font-family: Cairo, sans-serif;
+  background: #333;
+  margin: 0 auto;
+  width: 40%;
+  display: block;
+  font-size: 1.2em;
+  padding: 5px 5px;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: 1em;
+  transition: .5s ease;
+  margin-bottom: .8em;
+}
+
+
+.five .inputs {
+  margin-bottom: .8em;
+}
+
+.five .form-submit-btn:hover {
+  background: white;
+  color: #333;
+  border-color: #333;
+}
