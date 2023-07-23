@@ -8,7 +8,7 @@ import Four from "./components/Four";
 import Five from "./components/Five";
 import Navbar2 from "./components/Navbar2";
 import Footer from "./components/Footer";
-import Six from "./components/six";
+import Six from "./components/Six";
 
 const App = () => {
   return (
