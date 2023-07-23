@@ -159,6 +159,11 @@ const SixComp = () => {
           {/* {(specialRate && output) && <p>سعر العائد المميز للموظفين: <span className="value">{specialRate}%</span></p>} */}
         </div>
       )}
+      {output && (
+        <a href="https://drive.google.com/file/d/1svdxetWZ0hW798Jy7QqDIleeXcCaDz_C/view?usp=drivesdk">
+          التعليمات المنظمة
+        </a>
+      )}
     </main>
   );
 };

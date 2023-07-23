@@ -342,6 +342,10 @@ input:invalid {
   margin-bottom: -8px;
 }
 
+.six p:last-child {
+  margin-bottom: 2px;
+}
+
 .six input {
   text-align: center;
 }
@@ -349,4 +353,9 @@ input:invalid {
 .six .output span {
   font-weight: 900;
   text-decoration: underline;
+}
+
+.six > a {
+  display: block;
+  margin: 0 auto;
 }
