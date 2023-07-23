@@ -5,6 +5,7 @@
 *::after {
   box-sizing: border-box;
   outline: none;
+  font-family: "Cairo", Arial, Helvetica, sans-serif;
 }
 
 *:focus,

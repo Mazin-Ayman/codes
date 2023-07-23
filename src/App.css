@@ -6,6 +6,11 @@
   font-family: Cairo, sans-serif;
 }
 
+
+input:invalid {
+  border: solid red 2.5px;
+}
+
 .one {
   width: 100%;
   display: flex;
@@ -253,7 +258,7 @@
   background-color: #f97316;
 }
 
-.five > a {
+.five > a, .six > a {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -261,14 +266,14 @@
   font-weight: bold;
   text-decoration: none;
 }
-.five > a:visited {
+.five > a:visited, .six > a:visited {
   color: #316ac7;
 }
-.five > a:hover {
+.five > a:hover, .six > a:hover {
   text-decoration: underline;
 }
 
-.five .form-submit-btn {
+.five .form-submit-btn, .six form button {
   color: white;
   font-family: Cairo, sans-serif;
   background: #333;
@@ -289,8 +294,59 @@
   margin-bottom: .8em;
 }
 
-.five .form-submit-btn:hover {
+.five .form-submit-btn:hover, .six form button:hover {
   background: white;
   color: #333;
   border-color: #333;
+}
+
+
+.six form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.six form input {
+  padding: .6em;
+  color: #333;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.six form select {
+  padding: .6em;
+  padding-left: 1px;
+  color: #333;
+  font-weight: 800;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.six .output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  font-weight: 600;
+  position: relative;
+}
+
+
+.six p {
+  margin-bottom: -8px;
+}
+
+.six input {
+  text-align: center;
+}
+
+.six .output span {
+  font-weight: 900;
+  text-decoration: underline;
 }

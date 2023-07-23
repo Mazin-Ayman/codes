@@ -67,6 +67,11 @@ const Navbar2 = () => {
               استرداد شهادة مجددة
             </Link>
           </li>
+          <li className={link == "six" ? "on" : ""}>
+            <Link to="/dep" onClick={(e) => linksClick("six")}>
+              كسر وديعة قبل الاستحقاق
+            </Link>
+          </li>
         </ul>
       </div>
     </header>
