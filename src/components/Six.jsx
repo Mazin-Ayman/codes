@@ -100,7 +100,7 @@ const SixComp = () => {
           setOutput(res.toFixed(2));
           console.log(res);
         } 
-         const res = parseFloat(depRate) * 100;
+         const res = parseFloat(mydata[depType].depBrRate) * 100;
          setSpecialRate(res + 2);
       }
     }
@@ -155,7 +155,7 @@ const SixComp = () => {
       {output && (
         <div className="output">
           <p>قيمة الفائدة المحتسبة: <span className="value">{output}</span></p>
-          <p>سعر العائد الحالي للوديعة: <span className="value">{depRate * 100}%</span></p>
+          <p>سعر العائد الحالي للأجل الأقل: <span className="value">{mydata[depType].depBrRate * 100}%</span></p>
           {(specialRate && output) && <p>سعر العائد المميز للموظفين: <span className="value">{specialRate}%</span></p>}
         </div>
       )}
