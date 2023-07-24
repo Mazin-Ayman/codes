@@ -96,7 +96,7 @@ const SixComp = () => {
           setOutput(res.toFixed(2));
           console.log(res);
         } else {
-          let res = ((depVal * period) * depBrRate + 0.02) / 365;
+          let res = ((depVal * period) *(depBrRate + 0.02)) / 365;
           setOutput(res.toFixed(2));
           console.log(res);
         } 
