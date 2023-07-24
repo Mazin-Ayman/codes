@@ -155,7 +155,7 @@ const SixComp = () => {
       {output && (
         <div className="output">
           <p>قيمة الفائدة المحتسبة: <span className="value">{output}</span></p>
-          <p>سعر العائد الحالي للأجل الأقل: <span className="value">{mydata[depType].depBrRate * 100}%</span></p>
+          <p>سعر العائد الحالي-3 للأجل الأقل: <span className="value">{mydata[depType].depBrRate * 100}%</span></p>
           {(specialRate && output) && <p>سعر العائد المميز للموظفين: <span className="value">{specialRate}%</span></p>}
         </div>
       )}
