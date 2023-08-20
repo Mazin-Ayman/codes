@@ -47,7 +47,7 @@ const SixComp = () => {
     "ثلاث سنوات": {
       depMinVal: "0",
       depRate: "0.0875",
-      depBrRate: "0.055",
+      depBrRate: "0.0575",
     },
   };
   // states
