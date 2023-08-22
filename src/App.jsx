@@ -8,7 +8,8 @@ import Four from "./components/Four";
 import Five from "./components/Five";
 import Navbar2 from "./components/Navbar2";
 import Footer from "./components/Footer";
-import Six from "./components/Six";
+import Seven from "./components/Seven";
+// import Six from "./components/Six";
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Route path="/short" element={<Three />} />
         <Route path="/cr" element={<Four />} />
         <Route path="/cert" element={<Five />} />
-        <Route path="/dep" element={<Six />} />
+        <Route path="/dep" element={<Seven />} />
       </Routes>
       <Footer />
     </div>

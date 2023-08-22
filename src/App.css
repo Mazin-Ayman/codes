@@ -6,7 +6,6 @@
   font-family: Cairo, sans-serif;
 }
 
-
 input:invalid {
   border: solid red 2.5px;
 }
@@ -258,7 +257,9 @@ input:invalid {
   background-color: #f97316;
 }
 
-.five > a, .six > a {
+.five > a,
+.six > a,
+.seven a {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -266,14 +267,19 @@ input:invalid {
   font-weight: bold;
   text-decoration: none;
 }
-.five > a:visited, .six > a:visited {
-  color: #316ac7;
+.five > a:visited,
+.six > a:visited,
+.seven a:visited {
+  color: #3b82f6;
 }
-.five > a:hover, .six > a:hover {
+.five > a:hover,
+.six > a:hover,
+.seven a:hover {
   text-decoration: underline;
 }
 
-.five .form-submit-btn, .six form button {
+.five .form-submit-btn,
+.six form button {
   color: white;
   font-family: Cairo, sans-serif;
   background: #333;
@@ -285,23 +291,24 @@ input:invalid {
   font-weight: 700;
   border: 2px solid #fff;
   border-radius: 1em;
-  transition: .5s ease;
-  margin-bottom: .8em;
+  transition: 0.5s ease;
+  margin-bottom: 0.8em;
 }
-
 
 .five .inputs {
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 
-.five .form-submit-btn:hover, .six form button:hover {
+.five .form-submit-btn:hover,
+.six form button:hover,
+.seven button:hover {
   background: white;
   color: #333;
   border-color: #333;
 }
 
-
-.six form {
+.six form,
+.seven .inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,9 +316,9 @@ input:invalid {
   gap: 8px;
 }
 
-
-.six form input {
-  padding: .6em;
+.six form input,
+.seven input {
+  padding: 0.6em;
   color: #333;
   background-color: #fff;
   font-weight: bold;
@@ -319,7 +326,7 @@ input:invalid {
 }
 
 .six form select {
-  padding: .6em;
+  padding: 0.6em;
   padding-left: 1px;
   color: #333;
   font-weight: 800;
@@ -327,7 +334,8 @@ input:invalid {
   border-radius: 10px;
 }
 
-.six .output {
+.six .output,
+.seven output {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,10 +343,10 @@ input:invalid {
   color: wheat;
   font-weight: 600;
   position: relative;
+  /* gap: 15px; */
 }
 
-
-.six p {
+.six {
   margin-bottom: -8px;
 }
 
@@ -346,16 +354,47 @@ input:invalid {
   margin-bottom: 2px;
 }
 
-.six input {
+.six input,
+.seven {
   text-align: center;
 }
 
-.six .output span {
+.six .output span,
+.seven .output span {
   font-weight: 900;
   text-decoration: underline;
 }
 
-.six > a {
+.six > a,
+.seven > a {
   display: block;
   margin: 0 auto;
+}
+
+/* .seven .output p {
+  color: orange;
+} */
+/* .seven .outputs > * {
+  background: #fff;
+} */
+.seven .output p {
+  color: wheat;
+}
+.seven .output p:first-child {
+  border: none;
+}
+
+.seven .output p {
+  font-weight: bold;
+}
+
+.seven .output span {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.seven input {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.05em;
 }
