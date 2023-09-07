@@ -42,7 +42,7 @@ const Five = () => {
               onChange={(e) => setCertType(e.target.value)}
             >
               <option value="11">11% شهري</option>
-              <option value="16">16% شهري</option>
+              <option value="16">16% ربع سنوي</option>
               <option value="19">19% شهري</option>
               <option value="19.50">19.5% ربع سنوي</option>
             </select>
