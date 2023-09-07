@@ -23,7 +23,7 @@ const Five = () => {
   return (
     <main className="five">
       <small className="page-title">
-        حاسبة استرداد خلال 6 شهور بعد التجديد حال تعلية العائد
+        حاسبة استرداد شهادة مجددة خلال 6 شهور بعد التجديد حال تعلية العائد
       </small>
       <form onSubmit={(e) => {
         e.preventDefault();
