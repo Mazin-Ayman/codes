@@ -19,7 +19,7 @@ const One = () => {
   });
   const handle = (e) => {
     if (code >= 400 && code <= 520) setRate("مخاطر مرتفعة");
-    else if (code >= 521 && code <= 625) setRate("غير مُرضــي);
+    else if (code >= 521 && code <= 625) setRate("غير مُرضــي");
     else if (code >= 626 && code <= 700) setRate("مُرضــــــــــي");
     else if (code >= 701 && code <= 750) setRate("جيد جـــــدا");
     else if (code >= 751 && code <= 850) setRate("مُمـتــــــــــاز");
