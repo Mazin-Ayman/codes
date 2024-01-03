@@ -50,7 +50,7 @@ const One = () => {
               {rate}
             </p>
           </div>
-          <a className="link" href="https://fb.watch/pltmTHOnaS/?mibextid=Nif5oz">LINK</a>
+          <a className="link" href="https://drive.google.com/file/d/1PLYWopKKGee25fNzt7X0ckgnalaUMsPv/view?usp=drivesdk">شاهد من هنا</a>
         )}
       </form>
     </main>
