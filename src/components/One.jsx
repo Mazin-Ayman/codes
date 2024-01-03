@@ -12,9 +12,9 @@ const One = () => {
   const rateRef = useRef();
   const rateClass = classNames({
     rate: true,
-    good: rate === "جيد جدا" || rate === "ممتاز",
-    bad: rate === "مخاطر مرتفعة" || rate === "غير مرضي",
-    norm: rate === "مرضي",
+    good: rate === "جيد جدا" || rate === "ممتــــــاز",
+    bad: rate === "مخاطر مرتفعة" || rate === "غير مُرضــي",
+    norm: rate === "مُـــــرضـي",
     error: rate === "درجة تقييم الرقمي يجب ان تكون 400 : 850",
   });
   const handle = (e) => {
