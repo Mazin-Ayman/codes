@@ -399,3 +399,9 @@ input:invalid {
   font-weight: bold;
   font-size: 1.05em;
 }
+
+
+.one a {
+  display: block; 
+  margin: 0 auto; 
+} 
