@@ -270,12 +270,14 @@ input:invalid {
 }
 .five > a:visited,
 .six > a:visited,
-.seven a:visited {
+.seven a:visited,
+.one a:visited {
   color: #3b82f6;
 }
 .five > a:hover,
 .six > a:hover,
-.seven a:hover {
+.seven a:hover,
+.one a:hover {
   text-decoration: underline;
 }
 
