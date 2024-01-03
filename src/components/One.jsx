@@ -49,8 +49,8 @@ const One = () => {
             <p className={rateClass} ref={rateRef}>
               {rate}
             </p>
-            <a href="https://fb.watch/pltmTHOnaS/?mibextid=Nif5oz">LINK</a>
           </div>
+          <a className="link" href="https://fb.watch/pltmTHOnaS/?mibextid=Nif5oz">LINK</a>
         )}
       </form>
     </main>
