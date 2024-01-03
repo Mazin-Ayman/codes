@@ -24,7 +24,7 @@ const One = () => {
     else if (code >= 701 && code <= 750) setRate("جيد جـــــدا");
     else if (code >= 751 && code <= 850) setRate("مُمـتــــــــــاز");
     else if (code < 400 || code > 850) {
-      setRate(" ايمن عبدالعزيز بيقولكم ان درجة التقييم الرقمي يجب ان تكون بين 400 و 850");
+      setRate(" تعليمات شركة آي سكور تنص على ان درجة التقييم الرقمي يجب ان تكون بين 400 و 850");
       if (navigator in window) navigator.vibrate(200);
     } else {
       setRate(null);
