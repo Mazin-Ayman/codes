@@ -2,7 +2,7 @@ import { useState } from "react";
 import data from "./../../data4";
 
 const Eight = () => {
-  const [certType, setCertType] = useState();
+  const [certType, setCertType] = useState("شهادة الحصاد 11");
   const [certVal, setCertVal] = useState("");
   const [month, setMonth] = useState(7);
   const [certPayBackVal, setCertPayBackVal] = useState(0);
@@ -10,9 +10,9 @@ const Eight = () => {
   const [isVisisble, setIsVisable] = useState(false);
   const handle = (e) => {
     if (certVal == null || certVal == undefined) return;
-    let payBackVal = parseFloat(data["شهادة الحصاد 11"].filter(ele => ele.PayMnth == month)[0].PayBckVal);
+    let payBackVal = parseFloat(data[`${certType}`].filter(ele => ele.PayMnth == month)[0].PayBckVal);
     // PayBckVal * certVal
-    let result = payBackVal * certVal;
+    let result = payBackVal * parseInt(certVal);
     setCertPayBackVal(result.toFixed(2));
     setIsVisable(true);
   };
@@ -71,7 +71,7 @@ const Eight = () => {
               value={month}
             >
               {Array.from({ length: 30 }, (_, idx) => idx++ ).map(element => (
-                <option value={element+7}>{element+7}</option>
+                <option value={element+6}>{element+6}</option>
               ))}
             </select>
           </div>
@@ -88,11 +88,7 @@ const Eight = () => {
           </span>
         </div>
       </div>)}
-      {isVisisble && (
-        <a href="https://drive.google.com/file/d/1i2zXHutzNkt2b1uwA3WxW8aiM-EjWFDo/view?usp=drivesdk">
-          التعليمات المنظمة
-        </a>
-      )}
+      
     </main>
   );
 };

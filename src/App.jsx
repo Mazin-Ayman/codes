@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/cr" element={<Four />} />
         <Route path="/cert" element={<Five />} />
         <Route path="/dep" element={<Seven />} />
-        <Route path="/payback" element={<Eight />} />
+        <Route path="/payback" key={"payback"} element={<Eight />} />
       </Routes>
       <Footer />
     </div>

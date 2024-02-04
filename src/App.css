@@ -228,7 +228,8 @@ input:invalid {
 }
 
 .five #certAd,
-.five #certOut {
+.five #certOut,
+.outputs span {
   color: black;
   width: 40px;
   padding: 0 16px 0 16px;
@@ -253,9 +254,9 @@ input:invalid {
   margin-bottom: 2rem;
 }
 
-.five .outputs span {
+/* .five .outputs span {
   background-color: #f97316;
-}
+} */
 
 .five > a,
 .six > a,
