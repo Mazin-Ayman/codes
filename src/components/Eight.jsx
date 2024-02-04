@@ -3,7 +3,7 @@ import data from "./../../data4";
 
 const Eight = () => {
   const [certType, setCertType] = useState("شهادة الحصاد 11");
-  const [certVal, setCertVal] = useState("");
+  const [certVal, setCertVal] = useState(0);
   const [month, setMonth] = useState(7);
   const [certPayBackVal, setCertPayBackVal] = useState(0);
   
