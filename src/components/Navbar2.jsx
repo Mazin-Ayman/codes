@@ -73,7 +73,7 @@ const Navbar2 = () => {
             </Link>
           </li>
           <li className={link == "six" ? "on" : ""}>
-            <Link to="/dep" onClick={(e) => linksClick("six")}>
+            <Link to="/payback" onClick={(e) => linksClick("six")}>
             الجداول الاستردادية للشهادات
             </Link>
           </li>
