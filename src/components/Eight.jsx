@@ -3,13 +3,13 @@ import data from "./../../data4";
 
 const Eight = () => {
   const [certType, setCertType] = useState("شهادة الحصاد 11");
-  const [certVal, setCertVal] = useState(0);
+  const [certVal, setCertVal] = useState("");
   const [month, setMonth] = useState(7);
   const [certPayBackVal, setCertPayBackVal] = useState(0);
   
   const [isVisisble, setIsVisable] = useState(false);
   const handle = (e) => {
-    if (certVal == null || certVal == undefined) return;
+    if (certVal == null || certVal == undefined || certVal == "" || certVal == NaN) return;
     let payBackVal = parseFloat(data[`${certType}`].filter(ele => ele.PayMnth == month)[0].PayBckVal);
     // PayBckVal * certVal
     let result = payBackVal * parseInt(certVal);

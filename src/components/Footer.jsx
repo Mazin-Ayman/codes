@@ -5,7 +5,7 @@ const Footer = () => {
         {
           textDecoration: "none",
           fontWeight: 'bold', 
-          color: '#000'
+          color: 'black',
         }
       }>Ayman Ahmed AbdelAziz  Fayoum Internal Control - Last Updated on 04/02/2024</a>
     </footer>
