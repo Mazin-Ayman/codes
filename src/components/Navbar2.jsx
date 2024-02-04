@@ -72,6 +72,11 @@ const Navbar2 = () => {
               كسر وديعة قبل الاستحقاق
             </Link>
           </li>
+          <li className={link == "six" ? "on" : ""}>
+            <Link to="/dep" onClick={(e) => linksClick("six")}>
+            الجداول الاستردادية للشهادات
+            </Link>
+          </li>
         </ul>
       </div>
     </header>
