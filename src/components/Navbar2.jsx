@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import { useRef, useState } from "react";
-//import "../../public/newlogo1.png";
+import logo from "../../public/newlogo1.png";
 
 import "./navbar2.css";
 
@@ -36,7 +36,7 @@ const Navbar2 = () => {
         >
           <img
             className="logo-img"
-            src="https://drive.google.com/file/d/1CdaXUsovU3_qvmRdkoGagaafFtPs6gTq/view?usp=drivesdk"
+            src={logo}
             alt="logo"
           />
         </div>
