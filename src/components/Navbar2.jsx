@@ -35,7 +35,7 @@ const Navbar2 = () => {
         >
           <img
             className="logo-img"
-            src="https://i.ibb.co/yXLcCm7/newlogo.png"
+            src="https://i.ibb.co/yXLcCm7/newlogo1.png"
             alt="logo"
           />
         </div>
