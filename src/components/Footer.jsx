@@ -1,7 +1,7 @@
 const Footer = () => {
   return(
     <footer className="footer">
-      <a target="blank" href="https://qrfy.com/p/38-gF6AUWm?utm_source=qrcode&utm_medium=business&utm_campaign=37649358" style={
+      <a target="blank" href="https://drive.google.com/file/d/1-HYze1cWipHv_OVVHlUayRgrXcwKeFF0/view?usp=drivesdk" style={
         {
           textDecoration: "none",
           fontWeight: 'bold', 
