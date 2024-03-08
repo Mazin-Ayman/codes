@@ -41,7 +41,7 @@ const Eight = () => {
               <option value="16">16% ربع سنوي</option>
              <option value="17">17% سنوي</option>
               <option value="19">19% شهري</option>
-              <option value="19.50">19.5% ربع سنوي</option> */}
+              <option value="19.50">19.5%  سنوي</option> */}
               {Object.keys(data).map(key => (
                 <option value={key}>{key}</option>
               ))}
