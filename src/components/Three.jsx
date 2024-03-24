@@ -70,7 +70,7 @@ const Three = () => {
         {id && (
           <div className='info'>
             <p>الوظيفة:</p>
-            <p className="info-content">{info}</p>
+            <p className="info-content">{id}</p>
           </div>
         )}
       </div>
