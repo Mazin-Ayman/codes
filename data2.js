@@ -85,6 +85,15 @@ const data = {
   "الغاء فك الايقاف للشيك المصرفي": { shortcut: "CRDDSP", en_job: "Cancel Revcn of DD Stop Payment", officer: "Maker" },
   "مراجعة فك الايقاف للشيك المصرفي": { shortcut: "VRDDSP", en_job: "Verify Revcn of DD Stop Payment", officer: "Checker" },
   "اعادة الطباعة للشيك المصرفي": { shortcut: "RDDF", en_job: "Reprint Demand Draft", officer: "Maker" },
-  "الاستعلام عن العمليات المستديمة": { shortcut: "ISGI", en_job: "Inquire on Standing Instrns", officer: "Maker" }
+  "الاستعلام عن العمليات المستديمة": { shortcut: "ISGI", en_job: "Inquire on Standing Instrns", officer: "Maker" },
+  "اضافة حجز على الحساب": { shortcut: "ALA", en_job: "Add Lien Account", officer: "Maker" },
+  "الغاء الحجز على الحساب": { shortcut: "CLA", en_job: "Cancel lien on account", officer: "Maker" },
+  "مراجعة الحجز على الحساب": { shortcut: "VLA", en_job: "Verify Lien Account", officer: "Checker" },
+  "تعديل الحجز على الحساب": { shortcut: "MLA", en_job: "Modify lien on account", officer: "Maker" },
+  "الاستعلام الحجز على الحساب": { shortcut: "IELN", en_job: "Inquire on lien", officer: "Maker-Checker" },
+  "سجل الحجز على الحساب": { shortcut: "ILHY", en_job: "Inquire on lien History", officer: "Maker-Checker" },
+  "الاستعلام عن الحجز الخاص بالعميل": { shortcut: "ICL", en_job: "Inquire on Customer Lien", officer: "Maker-Checker" },
+  "قائمة الحجز على الحساب": { shortcut: "LAL", en_job: "List of Account lien ", officer: "Maker-Checker" },
+  "الاستعلام عن رصيد حساب": { shortcut: "IAB", en_job: "Inquire on Account Balance", officer: "Maker- Checker" }
 }
 export default data;
