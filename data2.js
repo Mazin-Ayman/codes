@@ -135,6 +135,9 @@ const data = {
   "الغاء عملية تجميد حساب قبل المراجعة": { shortcut: "CAFD", en_job: "Cancel Account Freeze Details", officer: "Maker" },
   " الغاء تجميد الحساب ": { shortcut: "UAS", en_job: "Unfreeze Account", officer: "Maker" },
   "الاستعلام على الحسابات المجمدة على مستوى العميل والحسابات": { shortcut: "IAFD", en_job: "Inquire on Account Freeze Details", officer: "Maker-checker" },
-  "تننفيذ الى مجمع لتجميد او عدم تجميد الحسابات": { shortcut: "BFUAS", en_job: "Batch Freeze or Unfreeze Accounts", officer: "central Ops -Manager Liabilities" }
+  "تننفيذ الى مجمع لتجميد او عدم تجميد الحسابات": { shortcut: "BFUAS", en_job: "Batch Freeze or Unfreeze Accounts", officer: "central Ops -Manager Liabilities" },
+  "ادارة امر دفع": { shortcut: "MPOR", en_job: "Maintain Payment Order", officer: "Maker-Checker" },
+  "الاعتماد مركزيا للحوالات الصادرة": { shortcut: "AOPO", en_job: "Authorize outward Payment Orders", officer: "Maker-Checker" },
+  "استعلام عن امر الدفع": { shortcut: "IMPOR", en_job: "Inquire Payment Order", officer: "Maker-Checker" }
 }
 export default data;
