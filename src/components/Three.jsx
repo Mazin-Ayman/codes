@@ -44,7 +44,7 @@ const Three = () => {
                 sx={{ textAlign: "center" }}
               />
             )}
-            // freeSolo
+
           />
         </Stack>
       </form>
@@ -57,7 +57,7 @@ const Three = () => {
         )}
         {jobEn && (
           <div>
-            <p>الوظيفة:</p>
+            <p>Task:</p>
             <p className="jben">{jobEn}</p>
           </div>
         )}
@@ -65,6 +65,12 @@ const Three = () => {
           <div>
             <p>المختص:</p>
             <p className="off">{office}</p>
+          </div>
+        )}
+        {id && (
+          <div className='info'>
+            <p>الوظيفة:</p>
+            <p className="info-content">{info}</p>
           </div>
         )}
       </div>
