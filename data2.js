@@ -113,6 +113,11 @@ const data = {
   " فتح حساب توفير ": { shortcut: "OSA", en_job: "Open Saving Account", officer: "Maker" },
   " تعديل حساب التوفير قبل المراجعة": { shortcut: "MOSAV", en_job: "Modify Opened Saving Account Before Verification ", officer: "Maker" },
   " الغاء فتح حساب توفير قبل المراجعة": { shortcut: "CSAO", en_job: "Cancel Current Account Opening", officer: "Maker" },
-  " مراجعة فتح/الغاء/تعديل حساب توفير": { shortcut: "VSAO", en_job: "Verify Current Account Opening", officer: "Checker" }
+  " مراجعة فتح/الغاء/تعديل حساب توفير": { shortcut: "VSAO", en_job: "Verify Current Account Opening", officer: "Checker" },
+  " تعديل خاص لحالة حساب": { shortcut: "CMAS", en_job: "Custom Modify Account Status", officer: "Maker-Checker" },
+  "تعديل اسم الحساب": { shortcut: "MAN", en_job: "Modify Account Name", officer: "Maker-Checker" },
+  "الغاء تعديل اسم الحساب": { shortcut: "CANM", en_job: "Cancel Account Name Modification ", officer: "Maker-Checker" },
+  " مراجعة تعديل اسم الحسساب": { shortcut: "VANM", en_job: "Verify Account Name Modification", officer: "Maker-Checker" },
+  " انشاء حساب مرتبات للعميل ": { shortcut: "CSPAC", en_job: "Customer Salary Payroll Account Creation ", officer: "Maker-Checker" }
 }
 export default data;
