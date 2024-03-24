@@ -154,5 +154,18 @@ const data = {
   "ادارة طلب التنفيذ بطاقة الائتمان": { shortcut: "MPA", en_job: "Maintain Processing APPLCN", officer: "Maker" },
   " ادارة طلب قرار الائتمان بطاقة الائتمان": { shortcut: "MCDA", en_job: "Maintain CR DESCN APPLCN", officer: "Maker" },
   "ادارة طلب ما بعد الاعتماد بطاقة الائتمان": { shortcut: "MPAA", en_job: "Maintain Post Approval APPLCN", officer: "Maker" },
+  "اجراء دفعة مجدولة للقرض": { shortcut: "PLSP", en_job: "Perform Loan Schedule Payment", officer: "Maker" },
+  "الغاء دفعة للقرض": { shortcut: "CLSP", en_job: "Cancel Loan Schedule Payment", officer: "Maker" },
+  "مراجعة دفعة للقرض": { shortcut: "VLSP", en_job: "Verify Loan Schedule Payment", officer: "Checker" },
+  "عكس الدفعة المجدولة للقرض": { shortcut: "RLSP", en_job: "Reverse Loan Schedule Payment", officer: "Maker" },
+  "اضافة دفعة غير مجدولة للقرض": { shortcut: "ARLUP", en_job: "Add Retail Loan Unscheduled Payment", officer: "Maker" },
+  "الغاء دفعة غير مجدولة لقرض عملاء افراد": { shortcut: "CRLUP", en_job: "Cancel Loan Retail Unscheduled Payment", officer: "Maker" },
+  "مراجعة دفعة للقرض": { shortcut: "VRLUP", en_job: "Verify Retail Loan Unscheduled Payment", officer: "Checker" },
+  "عكس دفعة غير مجدولة لقرض عملاء افراد": { shortcut: "RRLUP", en_job: "Reverse Retail Loan Unscheduled Payment", officer: "Checker" },
+  "تنفيذ تجريبي لسداد كامل مبلغ القرض": { shortcut: "PTLP", en_job: "Perform Trial Loan Payoff", officer: "Maker" },
+  "الغاء سداد كامل مبلغ للقرض": { shortcut: "CLP", en_job: "Cancel Loan Payoff", officer: "Maker" },
+  "سداد كامل مبلغ للقرض": { shortcut: "POLA", en_job: "Payoff Loan Amount", officer: "Maker" },
+  "مراجعة سداد كامل مبلغ القرض": { shortcut: "VLP", en_job: "Verify Loan Payoff", officer: "checker" },
+  "عكس سداد كامل مبلغ للقرض": { shortcut: "RLPF", en_job: "Reverse Loan Payoff", officer: "Maker" }
 }
 export default data;
