@@ -124,10 +124,17 @@ const data = {
   "الغاء المذكرة قبل المراجعة": { shortcut: "CMPV", en_job: "Cancel Memo Pad before Verification", officer: "Maker" },
   "مراجعة المذكرة": { shortcut: "VMP", en_job: "Verify Memo Pad", officer: "Checker" },
   "الاستعلام عن تفاصيل المذكرة": { shortcut: "IMP", en_job: "Inquire Memo Pad", officer: "Maker-Checker" },
-  "حذف المذكرة": { shortcut: "DMP", en_job: "delete Memo Pad", officer: "Maker" },
+  "حذف المذكرة": { shortcut: "DMP", en_job: "Delete Memo Pad", officer: "Maker" },
   "فتح حساب وديعة متزايدة": { shortcut: "OTUDA", en_job: "Open Top Up Deposit Account", officer: "Maker" },
   "تعديل حساب الوديعة المتزايدة المفتوح قبل المراجعة": { shortcut: "MOTUDAV", en_job: "Modify Opened Top Up Deposit Account before verification", officer: "Maker" },
   "الغاء فتح حساب وديعة متزايدة": { shortcut: "CTUDAO", en_job: "Cancel Top Up Deposit Account opening", officer: "Maker" },
-  "مراجعة فتح حساب وديعة متزايدة": { shortcut: "VTUDAO", en_job: "Verify Top Up Deposit Account Opening", officer: "Checker" }
+  "مراجعة فتح حساب وديعة متزايدة": { shortcut: "VTUDAO", en_job: "Verify Top Up Deposit Account Opening", officer: "Checker" },
+  "تجميد الحساب": { shortcut: "FAS", en_job: "Freeze Account", officer: "Maker" },
+  "مراجعة تجميد الحساب": { shortcut: "VAFD", en_job: "Verify Account Freeze Detail", officer: "Checker" },
+  "تعديل تفاصيل تجميد الحساب": { shortcut: "MADF", en_job: "Modify Account Freeze Details", officer: "Maker" },
+  "الغاء عملية تجميد حساب قبل المراجعة": { shortcut: "CAFD", en_job: "Cancel Account Freeze Details", officer: "Maker" },
+  " الغاء تجميد الحساب ": { shortcut: "UAS", en_job: "Unfreeze Account", officer: "Maker" },
+  "الاستعلام على الحسابات المجمدة على مستوى العميل والحسابات": { shortcut: "IAFD", en_job: "Inquire on Account Freeze Details", officer: "Maker-checker" },
+  "تننفيذ الى مجمع لتجميد او عدم تجميد الحسابات": { shortcut: "BFUAS", en_job: "Batch Freeze or Unfreeze Accounts", officer: "central Ops -Manager Liabilities" }
 }
 export default data;
