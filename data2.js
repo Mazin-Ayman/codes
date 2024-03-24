@@ -115,5 +115,4 @@ const data = {
   " الغاء فتح حساب توفير قبل المراجعة": { shortcut: "CSAO", en_job: "Cancel Current Account Opening", officer: "Maker" },
   " مراجعة فتح/الغاء/تعديل حساب توفير": { shortcut: "VSAO", en_job: "Verify Current Account Opening", officer: "Checker" }
 }
-}
 export default data;
