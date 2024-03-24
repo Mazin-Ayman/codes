@@ -117,7 +117,13 @@ const data = {
   " تعديل خاص لحالة حساب": { shortcut: "CMAS", en_job: "Custom Modify Account Status", officer: "Maker-Checker" },
   "تعديل اسم الحساب": { shortcut: "MAN", en_job: "Modify Account Name", officer: "Maker-Checker" },
   "الغاء تعديل اسم الحساب": { shortcut: "CANM", en_job: "Cancel Account Name Modification ", officer: "Maker-Checker" },
-  " مراجعة تعديل اسم الحسساب": { shortcut: "VANM", en_job: "Verify Account Name Modification", officer: "Maker-Checker" },
-  " انشاء حساب مرتبات للعميل ": { shortcut: "CSPAC", en_job: "Customer Salary Payroll Account Creation ", officer: "Maker-Checker" }
+  " مراجعة تعديل اسم الحساب": { shortcut: "VANM", en_job: "Verify Account Name Modification", officer: "Maker-Checker" },
+  " انشاء حساب مرتبات للعميل ": { shortcut: "CSPAC", en_job: "Customer Salary Payroll Account Creation ", officer: "Maker-Checker" },
+  "اضافة مذكرة": { shortcut: "AMP", en_job: "Add Memo Pad", officer: "Maker" },
+  "تعديل مذكرة": { shortcut: "MMP", en_job: "Modify Memo Pad", officer: "Maker" },
+  "الغاء المذكرة قبل المراجعة": { shortcut: "CMPV", en_job: "Cancel Memo Pad before Verification", officer: "Maker" },
+  "مراجعة المذكرة": { shortcut: "VMP", en_job: "Verify Memo Pad", officer: "Checker" },
+  "الاستعلام عن تفاصيل المذكرة": { shortcut: "IMP", en_job: "Inquire Memo Pad", officer: "Maker-Checker" },
+  "حذف المذكرة": { shortcut: "DMP", en_job: "delete Memo Pad", officer: "Maker" }
 }
 export default data;
