@@ -143,6 +143,16 @@ const data = {
   "انشاء طلب": { shortcut: "CRCAN", en_job: "Creat RTL CR APPLCN", officer: "Maker" },
   "ادارة تسجيل بيانات الطلب": { shortcut: "MDCA", en_job: "Maintain Data Capture APPLCN", officer: "Maker" },
   "ادارة طلب قرار الائتمان": { shortcut: "MCDA", en_job: "Maintain CR DESCN APPLCN", officer: "Maker" },
-  "ادارة طلب ما بعد الاعتماد": { shortcut: "MPAA", en_job: "MaintainPost Approval APPLCN", officer: "Maker" }
+  "ادارة طلب ما بعد الاعتماد": { shortcut: "MPAA", en_job: "Maintain Post Approval APPLCN", officer: "Maker" },
+  " انشاء طلب قرض شخصي": { shortcut: "CRCAN", en_job: "Creat RTL CR APPLCN", officer: "Maker" },
+  "ادارة تسجيل بيانات الطلب قرض شخصي": { shortcut: "MDCA", en_job: "Maintain Data Capture APPLCN", officer: "Maker" },
+  "ادارة طلب التنفيذ القرض الشخصي": { shortcut: "MPA", en_job: "Maintain Processing APPLCN", officer: "Maker" },
+  " ادارة طلب قرار الائتمان للقرض الشخصي": { shortcut: "MCDA", en_job: "Maintain CR DESCN APPLCN", officer: "Maker" },
+  "ادارة طلب ما بعد الاعتماد للقرش الشخصي": { shortcut: "MPAA", en_job: "Maintain Post Approval APPLCN", officer: "Maker" },
+  " انشاء طلب بطاقة ائتمان ": { shortcut: "CRCAN", en_job: "Creat RTL CR APPLCN", officer: "Maker" },
+  "ادارة تسجيل بيانات الطلب بطاقة الائتمان": { shortcut: "MDCA", en_job: "Maintain Data Capture APPLCN", officer: "Maker" },
+  "ادارة طلب التنفيذ بطاقة الائتمان": { shortcut: "MPA", en_job: "Maintain Processing APPLCN", officer: "Maker" },
+  " ادارة طلب قرار الائتمان بطاقة الائتمان": { shortcut: "MCDA", en_job: "Maintain CR DESCN APPLCN", officer: "Maker" },
+  "ادارة طلب ما بعد الاعتماد بطاقة الائتمان": { shortcut: "MPAA", en_job: "Maintain Post Approval APPLCN", officer: "Maker" },
 }
 export default data;
