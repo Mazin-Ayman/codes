@@ -99,6 +99,13 @@ input:invalid {
   box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.1);
 }
 
+.three .data .off,
+.three .data .shrt,
+.three .data .jben {
+  text-align: left;
+}
+
+
 .two,
 .three,
 .four {
