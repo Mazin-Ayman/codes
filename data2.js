@@ -109,6 +109,11 @@ const data = {
   " فتح حساب جاري ": { shortcut: "OCA", en_job: "Open Current Account", officer: "Maker" },
   " تعديل الحساب الجاري قبل المراجعة": { shortcut: "MOCAV", en_job: "Modify Opened Current Account Before Verification ", officer: "Maker" },
   " الغاء فتح حساب جاري قبل المراجعة": { shortcut: "CCAO", en_job: "Cancel Current Account Opening", officer: "Maker" },
-  " مراجعة فتح/الغاء/تعديل حساب جاري": { shortcut: "VCAO", en_job: "Verify Current Account Opening", officer: "Checker" }
+  " مراجعة فتح/الغاء/تعديل حساب جاري": { shortcut: "VCAO", en_job: "Verify Current Account Opening", officer: "Checker" },
+  " فتح حساب توفير ": { shortcut: "OSA", en_job: "Open Saving Account", officer: "Maker" },
+  " تعديل حساب التوفير قبل المراجعة": { shortcut: "MOSAV", en_job: "Modify Opened Saving Account Before Verification ", officer: "Maker" },
+  " الغاء فتح حساب توفير قبل المراجعة": { shortcut: "CSAO", en_job: "Cancel Current Account Opening", officer: "Maker" },
+  " مراجعة فتح/الغاء/تعديل حساب توفير": { shortcut: "VSAO", en_job: "Verify Current Account Opening", officer: "Checker" }
+}
 }
 export default data;
