@@ -117,6 +117,21 @@ input:invalid {
   color: #fff;
 }
 
+
+/*
+  Three
+*/
+.three .data .off {
+  position: relative;
+  text-align: center;
+  margin: 10px auto;
+  background-color: #dcdbd9;
+  color: #252828;
+  padding: 7px;
+  font-weight: 700;
+  border-radius: 25px;
+}
+
 .two input::placeholder {
   font-family: "Cairo", sans-serif;
   text-align: center;
