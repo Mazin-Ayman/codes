@@ -94,6 +94,7 @@ const data = {
   "سجل الحجز على الحساب": { shortcut: "ILHY", en_job: "Inquire on lien History", officer: "Maker-Checker" },
   "الاستعلام عن الحجز الخاص بالعميل": { shortcut: "ICL", en_job: "Inquire on Customer Lien", officer: "Maker-Checker" },
   "قائمة الحجز على الحساب": { shortcut: "LAL", en_job: "List of Account lien ", officer: "Maker-Checker" },
-  "الاستعلام عن رصيد حساب": { shortcut: "IAB", en_job: "Inquire on Account Balance", officer: "Maker- Checker" }
+  "الاستعلام عن رصيد حساب": { shortcut: "IAB", en_job: "Inquire on Account Balance", officer: "Maker- Checker" },
+  "الاستعلام عن الحقول الاساسية لملف بيانات العميل": { shortcut: "ICCF", en_job: "Inquire on CIF Core Fields  ", officer: "Maker- Checker" }
 }
 export default data;
