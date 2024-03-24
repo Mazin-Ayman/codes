@@ -95,6 +95,16 @@ const data = {
   "الاستعلام عن الحجز الخاص بالعميل": { shortcut: "ICL", en_job: "Inquire on Customer Lien", officer: "Maker-Checker" },
   "قائمة الحجز على الحساب": { shortcut: "LAL", en_job: "List of Account lien ", officer: "Maker-Checker" },
   "الاستعلام عن رصيد حساب": { shortcut: "IAB", en_job: "Inquire on Account Balance", officer: "Maker- Checker" },
-  "الاستعلام عن الحقول الاساسية لملف بيانات العميل": { shortcut: "ICCF", en_job: "Inquire on CIF Core Fields  ", officer: "Maker- Checker" }
+  "الاستعلام عن الحقول الاساسية لملف بيانات العميل": { shortcut: "ICCF", en_job: "Inquire on CIF Core Fields  ", officer: "Maker- Checker" },
+  "الاستعلام عن رصيد حساب": { shortcut: "IAB", en_job: "Inquire on Account Balance", officer: "Maker- Checker" },
+  " حظر او الغاء حظر ملف بيانات العملاء افراد من القائمة السوداء": { shortcut: "BURCF", en_job: "Blacklist or Unblack-list Retail CIF  ", officer: "Maker" },
+  " حظر او الغاء حظر ملف بيانات العملاء الشركات من القائمة السوداء": { shortcut: "BUCCF", en_job: "Blacklist or Unblack-list Corporate CIF  ", officer: "Maker" },
+  " تعليق او الغاء تعليق ملف بيانات العميل افراد": { shortcut: "SURC", en_job: "Suspend or Unsuspend Retail CIF  ", officer: "Maker" },
+  " تعليق او الغاء تعليق ملف بيانات العميل الشركات": { shortcut: "SUCC", en_job: "Suspend or Unsuspend Corporate CIF  ", officer: "Maker" },
+  "ادارة تفاصيل مجموعة ملفات تفاصيل العميل": { shortcut: "MCGD", en_job: "Maintain CIF Group Details", officer: "Maker" },
+  "ادارة تفاصيل العائلة": { shortcut: "MHDS", en_job: "Maintain Household Details", officer: "Maker" },
+  " صندوق مهام اعتماد ملفات بيانات العملاء الافراد والشركات": { shortcut: "RCCAT", en_job: "Retail and corporate CIF Approval tray", officer: "Checker" },
+  "  ادارة التفاصيل الرئيسية لقائمة استبعاد العملاء افراد ": { shortcut: "MRNLMD", en_job: "Retail closed CIF menu ", officer: "Maker" },
+  " ادارة التفاصيل الرئيسية لقائمة استبعاد العملاء  شركات": { shortcut: "MCNLMD", en_job: "Corporate Closed CIF menu ", officer: "Maker" }
 }
 export default data;
