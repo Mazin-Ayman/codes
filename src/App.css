@@ -121,7 +121,7 @@ input:invalid {
 /*
   Three
 */
-.three .data .off {
+.three .data div p:nth-child(2) {
   position: relative;
   text-align: center;
   margin: 10px auto;
