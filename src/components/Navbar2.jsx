@@ -45,17 +45,17 @@ const Navbar2 = () => {
         <ul>
           <li className={link === "one" ? "on" : ""}>
             <Link to="/" onClick={(e) => linksClick("one")}>
-              درجة التقييم
+              درجة التقييم الرقمي
             </Link>
           </li>
           <li className={link === "two" ? "on" : ""}>
             <Link to="/code" onClick={(e) => linksClick("two")}>
-              أكواد البنوك
+               أكواد البنوك بتقرير iScore
             </Link>
           </li>
           <li className={link === "three" ? "on" : ""}>
             <Link to="/short" onClick={(e) => linksClick("three")}>
-              اختصارات الـ Finacle
+               قوائم واختصارات الـ Finacle
             </Link>
           </li>
           <li className={link == "four" ? "on" : ""}>
