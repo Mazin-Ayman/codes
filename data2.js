@@ -138,6 +138,11 @@ const data = {
   "تننفيذ الى مجمع لتجميد او عدم تجميد الحسابات": { shortcut: "BFUAS", en_job: "Batch Freeze or Unfreeze Accounts", officer: "central Ops -Manager Liabilities" },
   "ادارة امر دفع": { shortcut: "MPOR", en_job: "Maintain Payment Order", officer: "Maker-Checker" },
   "الاعتماد مركزيا للحوالات الصادرة": { shortcut: "AOPO", en_job: "Authorize outward Payment Orders", officer: "Maker-Checker" },
-  "استعلام عن امر الدفع": { shortcut: "IMPOR", en_job: "Inquire Payment Order", officer: "Maker-Checker" }
+  "استعلام عن امر الدفع": { shortcut: "IMPOR", en_job: "Inquire Payment Order", officer: "Maker-Checker" },
+  "ادارة التفاصيل المالية لمقدم الطلب": { shortcut: "MAFDS", en_job: "Maintain Applicant Financial Dtls", officer: "Maker" },
+  "انشاء طلب": { shortcut: "CRCAN", en_job: "Creat RTL CR APPLCN", officer: "Maker" },
+  "ادارة تسجيل بيانات الطلب": { shortcut: "MDCA", en_job: "Maintain Data Capture APPLCN", officer: "Maker" },
+  "ادارة طلب قرار الائتمان": { shortcut: "MCDA", en_job: "Maintain CR DESCN APPLCN", officer: "Maker" },
+  "ادارة طلب ما بعد الاعتماد": { shortcut: "MPAA", en_job: "MaintainPost Approval APPLCN", officer: "Maker" }
 }
 export default data;
