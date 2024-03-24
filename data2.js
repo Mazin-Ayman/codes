@@ -105,6 +105,10 @@ const data = {
   "ادارة تفاصيل العائلة": { shortcut: "MHDS", en_job: "Maintain Household Details", officer: "Maker" },
   " صندوق مهام اعتماد ملفات بيانات العملاء الافراد والشركات": { shortcut: "RCCAT", en_job: "Retail and corporate CIF Approval tray", officer: "Checker" },
   "  ادارة التفاصيل الرئيسية لقائمة استبعاد العملاء افراد ": { shortcut: "MRNLMD", en_job: "Retail closed CIF menu ", officer: "Maker" },
-  " ادارة التفاصيل الرئيسية لقائمة استبعاد العملاء  شركات": { shortcut: "MCNLMD", en_job: "Corporate Closed CIF menu ", officer: "Maker" }
+  " ادارة التفاصيل الرئيسية لقائمة استبعاد العملاء  شركات": { shortcut: "MCNLMD", en_job: "Corporate Closed CIF menu ", officer: "Maker" },
+  " فتح حساب جاري ": { shortcut: "OCA", en_job: "Open Current Account", officer: "Maker" },
+  " تعديل الحساب الجاري قبل المراجعة": { shortcut: "MOCAV", en_job: "Modify Opened Current Account Before Verification ", officer: "Maker" },
+  " الغاء فتح حساب جاري قبل المراجعة": { shortcut: "CCAO", en_job: "Cancel Current Account Opening", officer: "Maker" },
+  " مراجعة فتح/الغاء/تعديل حساب جاري": { shortcut: "VCAO", en_job: "Verify Current Account Opening", officer: "Checker" }
 }
 export default data;
