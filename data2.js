@@ -188,6 +188,9 @@ const data = {
   "تعديل حساب اقراض عملاء افراد": { shortcut: "MRLAT", en_job: "Modify Retail Lending Account", officer: "Maker" },
   "الغاء تعديل حساب اقراض عملاء افراد موظفين": { shortcut: "CRLAM", en_job: "Cancel Retail Lending Account Modification", officer: "Maker" },
   "مراجعة تعديل حساب اقراض عملاء افراد موظفين": { shortcut: "VRLAM", en_job: "Verify Retail Lending Account Modification", officer: "Checker" },
-  "الاستعلام عن حساب اقراض عملاء افراد موظفين": { shortcut: "IRLAT", en_job: "Inquire On Retail Lending Account ", officer: "Maker-checker" }
+  "الاستعلام عن حساب اقراض عملاء افراد موظفين": { shortcut: "IRLAT", en_job: "Inquire On Retail Lending Account ", officer: "Maker-checker" },
+  "اغلاق حساب القرض": { shortcut: "CLAT", en_job: "Close Loan Account", officer: "Maker" },
+  "الغاء اغلاق حساب القرض": { shortcut: "CLAC", en_job: "Cancel Loan Account Closure", officer: "Maker" },
+  "مراجعة اغلاق حساب القرض": { shortcut: "VLAC", en_job: "Verify Loan Account Closure", officer: "Checker" }
 }
 export default data;
