@@ -196,6 +196,17 @@ const data = {
   "تعديل نقطة حد": { shortcut: "MLN", en_job: "Modify Limit Node", officer: "Maker" },
   "الغاء نقطة حد ": { shortcut: "CLNE", en_job: "Cancel Limit Node", officer: "Maker" },
   "مراجعة نقطة حد ائتماني": { shortcut: "VLN", en_job: "Verify Limit Node", officer: "Checker" },
-  "اغلاق نقطة حد ائتماني": { shortcut: "CLTN", en_job: "Close Limit Node", officer: "Maker" }
+  "اغلاق نقطة حد ائتماني": { shortcut: "CLTN", en_job: "Close Limit Node", officer: "Maker" },
+  "فتح حساب جاري مدين": { shortcut: "OOA", en_job: "Open Overdraft Account", officer: "Maker" },
+  "تعديل حساب جاري مدين مفتوح قبل المراجعة": { shortcut: "MOOAV", en_job: "Modify Opened Overdraft Account Before Verification", officer: "Maker" },
+  "الغاء فتح حساب جاري مدين": { shortcut: "COAO", en_job: "Cancel Overdraft Account Opening", officer: "Maker" },
+  "مراجعة فتح حساب جاري مدين": { shortcut: "VOAO", en_job: "Verify Overdraft Account Opening", officer: "Checker" },
+  "تعديل قوة السحب": { shortcut: "MDP", en_job: "Modify Drawing Power", officer: "Maker" },
+  "الغاء قوة السحب": { shortcut: "CDP", en_job: "Cancel Drawing Power", officer: "Maker" },
+  "مراجعة قوة السحب": { shortcut: "VDP", en_job: "Verify Drawing Power", officer: "Checker" },
+  "تعديل حدود المنح": { shortcut: "MSL", en_job: "Modify Sanction Limit", officer: "Maker" },
+  "الغاء حدود المنح": { shortcut: "CSLS", en_job: "Cancel Sanction Limit", officer: "Maker" },
+  "مراجعة حدود المنح": { shortcut: "VSL", en_job: "Verify Sanction Limit", officer: "Checker" },
+  "الاستعلام عن حد المنح": { shortcut: "ISL", en_job: "Inquire On Sanction Limit", officer: "Maker-Checker" }
 }
 export default data;
