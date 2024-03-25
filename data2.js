@@ -179,6 +179,15 @@ const data = {
   "اجراء صرف قرض": { shortcut: "PLD", en_job: "Perform Loan Disbursement ", officer: "Maker" },
   "الغاء صرف او عكس صرف قرض": { shortcut: "CLDR", en_job: "Cancel Loan Disbursement ", officer: "Maker" },
   "مراجعة صرف او عكس قرض": { shortcut: "VLDR", en_job: "Verify Loan Disbursement ", officer: "Checker" },
-  "عكس تفاصيل صرف قرض": { shortcut: "RLDD", en_job: "Reverse Loan Disbursement ", officer: "Maker" }
+  "عكس تفاصيل صرف قرض": { shortcut: "RLDD", en_job: "Reverse Loan Disbursement ", officer: "Maker" },
+  "اجراء نمذجة قرض عملاء افراد موظفين": { shortcut: "PRLM", en_job: "Perform retail loan modeling", officer: "Maker-Checker" },
+  "فتح حساب اقراض عملاء افراد موظفين": { shortcut: "ORLA", en_job: "Open retail lendinig Account", officer: "Maker" },
+  "تعديل حساب اقراض عملاء افراد قبل المراجعة موظفين": { shortcut: "MORLAV", en_job: "Modify Open Retail Lending Account Before Verification", officer: "Maker" },
+  "الغاء حساب اقراض عملاء افراد موظفين": { shortcut: "CRLAO", en_job: "Cancel Retail Lending Account Opening", officer: "Maker" },
+  "مراجعة حساب اقراض عملاء افراد موظفين": { shortcut: "VRLA", en_job: "Verify Retail Loan Account", officer: "Checker" },
+  "تعديل حساب اقراض عملاء افراد": { shortcut: "MRLAT", en_job: "Modify Retail Lending Account", officer: "Maker" },
+  "الغاء تعديل حساب اقراض عملاء افراد موظفين": { shortcut: "CRLAM", en_job: "Cancel Retail Lending Account Modification", officer: "Maker" },
+  "مراجعة تعديل حساب اقراض عملاء افراد موظفين": { shortcut: "VRLAM", en_job: "Verify Retail Lending Account Modification", officer: "Checker" },
+  "الاستعلام عن حساب اقراض عملاء افراد موظفين": { shortcut: "IRLAT", en_job: "Inquire On Retail Lending Account ", officer: "Maker-checker" }
 }
 export default data;
