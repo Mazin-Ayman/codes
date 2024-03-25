@@ -166,6 +166,15 @@ const data = {
   "الغاء سداد كامل مبلغ للقرض": { shortcut: "CLP", en_job: "Cancel Loan Payoff", officer: "Maker" },
   "سداد كامل مبلغ للقرض": { shortcut: "POLA", en_job: "Payoff Loan Amount", officer: "Maker" },
   "مراجعة سداد كامل مبلغ القرض": { shortcut: "VLP", en_job: "Verify Loan Payoff", officer: "checker" },
-  "عكس سداد كامل مبلغ للقرض": { shortcut: "RLPF", en_job: "Reverse Loan Payoff", officer: "Maker" }
+  "عكس سداد كامل مبلغ للقرض": { shortcut: "RLPF", en_job: "Reverse Loan Payoff", officer: "Maker" },
+  "اجراء نمذجة قرض عملاء افراد": { shortcut: "PRLM", en_job: "Perform retail loan modeling", officer: "Maker-Checker" },
+  "فتح حساب اقراض عملاء افراد": { shortcut: "ORLA", en_job: "Open retail lendinig Account", officer: "Maker" },
+  "تعديل حساب اقراض عملاء افراد قبل المراجعة": { shortcut: "MORLAV", en_job: "Modify Open Retail Lending Account Before Verification", officer: "Maker" },
+  "الغاء حساب اقراض عملاء افراد": { shortcut: "CRLAO", en_job: "Cancel Retail Lending Account Opening", officer: "Maker" },
+  "مراجعة حساب اقراض عملاء افراد": { shortcut: "VRLA", en_job: "Verify Retail Loan Account", officer: "Checker" },
+  "تعديل حساب اقراض عملاء افراد": { shortcut: "MRLAT", en_job: "Modify Retail Lending Account", officer: "Maker" },
+  "الغاء تعديل حساب اقراض عملاء افراد": { shortcut: "CRLAM", en_job: "Cancel Retail Lending Account Modification", officer: "Maker" },
+  "مراجعة تعديل حساب اقراض عملاء افراد": { shortcut: "VRLAM", en_job: "Verify Retail Lending Account Modification", officer: "Checker" },
+  "الاستعلام عن حساب اقراض عملاء افراد": { shortcut: "IRLAT", en_job: "Inquire On Retail Lending Account ", officer: "Maker-checker" }
 }
 export default data;
