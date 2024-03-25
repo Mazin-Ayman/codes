@@ -191,6 +191,11 @@ const data = {
   "الاستعلام عن حساب اقراض عملاء افراد موظفين": { shortcut: "IRLAT", en_job: "Inquire On Retail Lending Account ", officer: "Maker-checker" },
   "اغلاق حساب القرض": { shortcut: "CLAT", en_job: "Close Loan Account", officer: "Maker" },
   "الغاء اغلاق حساب القرض": { shortcut: "CLAC", en_job: "Cancel Loan Account Closure", officer: "Maker" },
-  "مراجعة اغلاق حساب القرض": { shortcut: "VLAC", en_job: "Verify Loan Account Closure", officer: "Checker" }
+  "مراجعة اغلاق حساب القرض": { shortcut: "VLAC", en_job: "Verify Loan Account Closure", officer: "Checker" },
+  "انشاء هيكل حد ائتماني": { shortcut: "CLS", en_job: "Creat Limit Structure", officer: "Maker" },
+  "تعديل نقطة حد": { shortcut: "MLN", en_job: "Modify Limit Node", officer: "Maker" },
+  "الغاء نقطة حد ": { shortcut: "CLNE", en_job: "Cancel Limit Node", officer: "Maker" },
+  "مراجعة نقطة حد ائتماني": { shortcut: "VLN", en_job: "Verify Limit Node", officer: "Checker" },
+  "اغلاق نقطة حد ائتماني": { shortcut: "CLTN", en_job: "Close Limit Node", officer: "Maker" }
 }
 export default data;
