@@ -207,6 +207,19 @@ const data = {
   "تعديل حدود المنح": { shortcut: "MSL", en_job: "Modify Sanction Limit", officer: "Maker" },
   "الغاء حدود المنح": { shortcut: "CSLS", en_job: "Cancel Sanction Limit", officer: "Maker" },
   "مراجعة حدود المنح": { shortcut: "VSL", en_job: "Verify Sanction Limit", officer: "Checker" },
-  "الاستعلام عن حد المنح": { shortcut: "ISL", en_job: "Inquire On Sanction Limit", officer: "Maker-Checker" }
+  "الاستعلام عن حد المنح": { shortcut: "ISL", en_job: "Inquire On Sanction Limit", officer: "Maker-Checker" },
+  "تسجيل ضمان": { shortcut: "LCL", en_job: "Lodge Collateral", officer: "Maker" },
+  "تعديل ضمان": { shortcut: "MYC", en_job: "Modify Collateral", officer: "Maker" },
+  "الغاء ضمان": { shortcut: "CCL", en_job: "Cancel Collateral", officer: "Maker" },
+  "مراجعة ضمان": { shortcut: "VYC", en_job: "Verify Collateral", officer: "Checker" },
+  "ربط ضمان برقم كيان": { shortcut: "LCEI", en_job: "Link Collateral to Entity", officer: "Maker-Checker" },
+  "تعديل ربط ضمان برقم كيان": { shortcut: "MCLEI", en_job: "Modify Collateral Linkingto Entity", officer: "Maker" },
+  "الغاء ربط ضمان برقم كيان قبل المراجعة": { shortcut: "CCLEIV", en_job: "Cancel Collateral Linking to Entity Before Verification", officer: "Maker" },
+  "مراجعة ربط ضمان برقم كيان": { shortcut: "VCLEI", en_job: "Verify Collateral Link to Entity", officer: "Checker" },
+  " فك ربط ضمان برقم كيان": { shortcut: "UCEI", en_job: "Unlink Collateral from Entity ID", officer: "Maker" },
+  "سحب الضمان": { shortcut: "WCL", en_job: "Withdraw Collateral", officer: "Maker" },
+  "الاستعلام عن تفاصيل الضمان": { shortcut: "IECDS", en_job: "Inquire on Collateral Details", officer: "Maker" },
+  "الاستعلام عن سجل التقييم": { shortcut: "IVHY", en_job: "Inquire on Valuation History", officer: "Maker" },
+  "الاستعلام عن تفاصيل الضمانات الخاصة بالعميل": { shortcut: "ICCD", en_job: "Lodge Collateral", officer: "Maker" }
 }
 export default data;
