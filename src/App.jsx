@@ -10,7 +10,7 @@ import Navbar2 from "./components/Navbar2";
 import Footer from "./components/Footer";
 import Seven from "./components/Seven";
 import Eight from './components/Eight';
-// import Six from "./components/Six";
+import Nine from './components/Nine';
 
 const App = () => {
   return (
@@ -24,6 +24,7 @@ const App = () => {
         <Route path="/cert" element={<Five />} />
         <Route path="/dep" element={<Seven />} />
         <Route path="/payback" key={"payback"} element={<Eight />} />
+        <Route path="/oldnums" key={"payback"} element={<Nine />} />
       </Routes>
       <Footer />
     </div>
