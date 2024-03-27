@@ -78,6 +78,11 @@ const Navbar2 = () => {
             الجداول الاستردادية للشهادات
             </Link>
           </li>
+          <li className={link == "six" ? "on" : ""}>
+            <Link to="/oldnums" onClick={(e) => linksClick("six")}>
+            ارقام الحسابات ارابنك - فينكال:
+            </Link>
+          </li>
         </ul>
       </div>
     </header>
