@@ -40,7 +40,7 @@ const Nine = () => {
             renderInput={(params) => (
               <TextField
                 {...params}
-                label="اكتب الوظيفة لتعرف الاختصار"
+                label="اكتب رقم الحساب ارابنك:"
                 sx={{ textAlign: "center" }}
               />
             )}
