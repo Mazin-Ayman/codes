@@ -220,6 +220,20 @@ const data = {
   "سحب الضمان": { shortcut: "WCL", en_job: "Withdraw Collateral", officer: "Maker" },
   "الاستعلام عن تفاصيل الضمان": { shortcut: "IECDS", en_job: "Inquire on Collateral Details", officer: "Maker" },
   "الاستعلام عن سجل التقييم": { shortcut: "IVHY", en_job: "Inquire on Valuation History", officer: "Maker" },
-  "الاستعلام عن تفاصيل الضمانات الخاصة بالعميل": { shortcut: "ICCD", en_job: "Lodge Collateral", officer: "Maker" }
+  "الاستعلام عن تفاصيل الضمانات الخاصة بالعميل": { shortcut: "ICCD", en_job: "Lodge Collateral", officer: "Maker" },
+  "اصدار خطاب ضمان صادر": { shortcut: "IOGE", en_job: "Issue Outward Guarantee", officer: "Maker" },
+  "تعديل خطاب ضمان صادر قبل المراجعة": { shortcut: "MOG", en_job: "Modify Outward Guarantee", officer: "Maker" },
+  "الغاء خطاب ضمان صادر قبل المراجعة": { shortcut: "COGE", en_job: "Cancel Outward Guarantee", officer: "Maker" },
+  "مراجعة خطاب ضمان صادر": { shortcut: "VOG", en_job: "Verify Outward Guarantee", officer: "Checker" },
+  "تعديل خطاب ضمان صادر": { shortcut: "AOG", en_job: "Amend Outward Guarantee", officer: "Maker" },
+  "تعديل حالة خطاب ضمان صادر": { shortcut: "ASOG", en_job: "Amend Status Outward Guarantee", officer: "Maker" },
+  "عكس حفظ خطابات الضمان الصادرة": { shortcut: "ROG", en_job: "Reverse Outward Guarantee", officer: "Maker" },
+  "التأشير باستعادة الضمانات الصادرة": { shortcut: "MIOG", en_job: "Mark Invoke Outward Guarantee", officer: "Maker" },
+  "عكس التأشير باستدعاء الضمانات الصادرة": { shortcut: "RMIOG", en_job: "Reverse Mark Invoke Outward Guarantee", officer: "Maker" },
+  "استدعاء ادارة الضمانات الصادرة": { shortcut: "IODG", en_job: "Invoke Outward Guarantee", officer: "Maker" },
+  "اغلاق الضمانات الصادرة": { shortcut: "COG", en_job: "Close Outward Guarantee", officer: "Maker" },
+  "الغاء اغلاق الضمانات الصادرة": { shortcut: "UOG", en_job: "Unclose Outward Guarantee", officer: "Maker" },
+  "الاستعلام عن خطاب الضمان الصادر": { shortcut: "IOG", en_job: "Inquire Outward Guarantee", officer: "Maker-Checker" },
+  "طباعة الية مجمعة للضمان البنكي": { shortcut: "BPBG", en_job: "Batch Print Bank Guarantee", officer: "Maker-Checker" }
 }
 export default data;
