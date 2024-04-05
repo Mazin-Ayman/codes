@@ -234,6 +234,19 @@ const data = {
   "اغلاق الضمانات الصادرة": { shortcut: "COG", en_job: "Close Outward Guarantee", officer: "Maker" },
   "الغاء اغلاق الضمانات الصادرة": { shortcut: "UOG", en_job: "Unclose Outward Guarantee", officer: "Maker" },
   "الاستعلام عن خطاب الضمان الصادر": { shortcut: "IOG", en_job: "Inquire Outward Guarantee", officer: "Maker-Checker" },
-  "طباعة الية مجمعة للضمان البنكي": { shortcut: "BPBG", en_job: "Batch Print Bank Guarantee", officer: "Maker-Checker" }
+  "طباعة الية مجمعة للضمان البنكي": { shortcut: "BPBG", en_job: "Batch Print Bank Guarantee", officer: "Maker-Checker" },
+  "اصدار خطاب ضمان وارد": { shortcut: "AIG", en_job: "Add Intward Guarantee", officer: "Maker" },
+  "تعديل خطاب ضمان وارد قبل المراجعة": { shortcut: "MIG", en_job: "Modify Inward Guarantee", officer: "Maker" },
+  "الغاء خطاب ضمان وارد قبل المراجعة": { shortcut: "CIGE", en_job: "Cancel Inward Guarantee", officer: "Maker" },
+  "مراجعة خطاب ضمان وارد": { shortcut: "VIG", en_job: "Verify Inward Guarantee", officer: "Checker" },
+  "تعديل خطاب ضمان وارد": { shortcut: "AIGE", en_job: "Amend Inward Guarantee", officer: "Maker" },
+  "تعديل حالة خطاب ضمان وارد": { shortcut: "ASIG", en_job: "Amend Status Inward Guarantee", officer: "Maker" },
+  "عكس حفظ خطابات الضمان الواردة": { shortcut: "RIG", en_job: "Reverse Inward Guarantee", officer: "Maker" },
+  "التأشير باستعادة الضمانات الواردة": { shortcut: "MIIG", en_job: "Mark Invoke Inward Guarantee", officer: "Maker" },
+  "عكس التأشير باستدعاء الضمانات الواردة": { shortcut: "RMIIG", en_job: "Reverse Mark Invoke Inward Guarantee", officer: "Maker" },
+  "استدعاء ادارة الضمانات الواردة": { shortcut: "IIDG", en_job: "Invoke Inward Guarantee", officer: "Maker" },
+  "اغلاق الضمانات الواردة": { shortcut: "CIG", en_job: "Close Inward Guarantee", officer: "Maker" },
+  "الغاء اغلاق الضمانات الواردة": { shortcut: "IUG", en_job: "Unclose Inward Guarantee", officer: "Maker" },
+  "الاستعلام عن خطاب الضمان الوارد": { shortcut: "IIG", en_job: "Inquire Inward Guarantee", officer: "Maker-Checker" }
 }
 export default data;
