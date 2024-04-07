@@ -3,14 +3,14 @@ import { useState } from "react";
 import { Autocomplete, Stack, TextField } from "@mui/material";
 const Nine = () => {
   const [id, setId] = useState("");
-  const [AccountNameAr, setAccountNameAr] = useState(null);
-  const [AccountNumberFin, setAccountNumberFin] = useState(null);
-  const [AccountFinAr, setAccountFinAr] = useState(null);
+  const [AccountNameAr, setAccountNameAr] = useState("");
+  const [AccountNumberFin, setAccountNumberFin] = useState("");
+  const [AccountFinAr, setAccountFinAr] = useState("");
 
   const handler = () => {
-    setShortcut(data[id].shortcut);
-    setJobEn(data[id].en_job);
-    setOffice(data[id].officer);
+    setAccountNameAr(data[id].AccArNme);
+    setAccountNumberFin(data[id].AccFinNo);
+    setAccountFinAr(data[id].FinAccArNme);
   };
   return (
     <main className="three">
