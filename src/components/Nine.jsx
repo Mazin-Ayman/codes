@@ -1,4 +1,4 @@
-import data from "./../../data9";
+import data from "./data9";
 import { useState } from "react";
 import { Autocomplete, Stack, TextField } from "@mui/material";
 const Nine = () => {
