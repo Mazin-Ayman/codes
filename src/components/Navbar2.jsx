@@ -80,7 +80,7 @@ const Navbar2 = () => {
           </li>
           <li className={link == "six" ? "on" : ""}>
             <Link to="/oldnums" onClick={(e) => linksClick("six")}>
-            ارقام الحسابات ارابنك - فينكال:
+            أرقام حسابات أرابنك - فينكال
             </Link>
           </li>
         </ul>
