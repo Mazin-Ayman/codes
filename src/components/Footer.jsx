@@ -7,7 +7,7 @@ const Footer = () => {
           fontWeight: 'bold', 
           color: 'green',
         }
-      }>Ayman Ahmed AbdelAziz - Fayoum Internal Control - Last Updated on 07/04/2024 ...جاري تحديث قوائم الفينيكال</a>
+      }>Ayman Ahmed AbdelAziz - Fayoum Internal Control - Last Updated on 09/04/2024 ...جاري الانتهاء من تحديث أهم قوائم واختصارات الفينيكال</a>
     </footer>
   );
 }
