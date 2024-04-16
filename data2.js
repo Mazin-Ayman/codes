@@ -249,6 +249,7 @@ const data = {
   "الغاء اغلاق الضمانات الواردة": { shortcut: "IUG", en_job: "Unclose Inward Guarantee", officer: "Maker" },
   "الاستعلام عن خطاب الضمان الوارد": { shortcut: "IIG", en_job: "Inquire Inward Guarantee", officer: "Maker-Checker" },
   "اخطار بالاعتماد المستندي الوارد": { shortcut: "AIDCT", en_job: "Advice Inward Documentary Credit", officer: "Maker" },
-  " تعديل اعتماد مستندي وارد قبل المراجعة": { shortcut: "MIDCT", en_job: "Modify Inward Documentary Credit", officer: "Maker" },
+  "تعديل اعتماد مستندي وارد قبل المراجعة": { shortcut: "MIDCT", en_job: "Modify Inward Documentary Credit", officer: "Maker" },
+  "طلب حذف تعديل استعلام مراجعة دفتر شيكات": { shortcut: "CCHQBOOK", en_job: "Cheque book request maintainance", officer: "Maker-Checker" }
 }
 export default data;
