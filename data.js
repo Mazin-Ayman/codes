@@ -91,6 +91,9 @@ const codes = {
   "0098690001": { bankNameAr: "شركة النيل للتاجير التمويلي", bankNameEn: "Nile Company Lease" },
   "0098700001": { bankNameAr: "شركة المجموعة المالية هيرمس للتاجير التمويلي", bankNameEn: "Hermes Leasing Company" },
   "0098710001": { bankNameAr: "شركة العربي الافريقي الدولى للتاجير التمويلي", bankNameEn: "Arab African International Leasing" },
-  "0098720001": { bankNameAr: "شركة جلوبال ليس للتاجير التمويلي", bankNameEn: "Global Lease" }
+  "MF00010001": { bankNameAr: "تنمية", bankNameEn: "Tanmya" },
+  "MF00021114": { bankNameAr: "باب رزق", bankNameEn: "Bab Rizk" },
+  "MF00040001": { bankNameAr: "تساهيل", bankNameEn: "Tasaheel" },
+  "MF00021559": { bankNameAr: "جمعية تنمية القدرات بقنا", bankNameEn: "Tanmya Kodrat Asoc.Qena" }
 }
 export default codes;
