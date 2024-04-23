@@ -94,6 +94,23 @@ const codes = {
   "MF00010001": { bankNameAr: "تنمية", bankNameEn: "Tanmya" },
   "MF00021114": { bankNameAr: "باب رزق", bankNameEn: "Bab Rizk" },
   "MF00040001": { bankNameAr: "تساهيل", bankNameEn: "Tasaheel" },
-  "MF00021559": { bankNameAr: "جمعية تنمية القدرات بقنا", bankNameEn: "Tanmya Kodrat Asoc.Qena" }
+  "MF00021559": { bankNameAr: "جمعية تنمية القدرات بقنا", bankNameEn: "Tanmya Kodrat Asoc.Qena" },
+  "MF00020000": { bankNameAr: "جمعية تنمية المجتمع بسوهاج", bankNameEn: "Tanmya Mogtama Asoc.Sohag" },
+  "MF00020006": { bankNameAr: "ليبد", bankNameEn: "Lebid" },
+  "MF0010001": { bankNameAr: "سندة", bankNameEn: "Sanda" },
+  "MF00020003": { bankNameAr: "جمعية رجال اعمال اسكندرية", bankNameEn: "Alexandria Businessmen Asoc." },
+  "MF00020001": { bankNameAr: "جمعية رجال اعمال الدقهلية", bankNameEn: "Dakahlya Businessmen Asoc." },
+  "MF00120001": { bankNameAr: "تمويلي", bankNameEn: "Tamweely" },
+  "MF00030001": { bankNameAr: "ريفي", bankNameEn: "Reefy" },
+  "MF00021245": { bankNameAr: "مبادرة", bankNameEn: "Mobadra" },
+  "MF00060001": { bankNameAr: "جمعية بورسعيد", bankNameEn: "PortSaid Asoc." },
+  "MF00021206": { bankNameAr: "مؤسسة تنمية الاسرة المصرية", bankNameEn: "Egyptian Family Development Org." },
+  "MF00021174": { bankNameAr: "المؤسسة الاولى للتمويل متناهي الصغر", bankNameEn: "First Organization SME" },
+  "MF00110001": { bankNameAr: "امان", bankNameEn: "Aman" },
+  "MF00021132": { bankNameAr: "جمعية رجال العمال بنجع حمادي", bankNameEn: "Nag'a Hammadi Businessmen Asoc." },
+  "MF00040001": { bankNameAr: "تساهيل", bankNameEn: "Tasaheel" },
+  "MF00050001": { bankNameAr: "تضامن", bankNameEn: "Tadamon" },
+  "MF00021029": { bankNameAr: "جمعية رجال اعمال الشرقية", bankNameEn: "Sharkya Businessmen Asoc." },
+  "NB00010001": { bankNameAr: "الصندوق الاجتماعي للتنمية", bankNameEn: "SFD" }
 }
 export default codes;
