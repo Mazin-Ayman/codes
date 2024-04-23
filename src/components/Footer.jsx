@@ -5,9 +5,9 @@ const Footer = () => {
         {
           textDecoration: "none",
           fontWeight: 'bold', 
-          color: 'green',
+          color: 'blue',
         }
-      }>Ayman Ahmed AbdelAziz - Fayoum Internal Control - Last Updated on 09/04/2024 ...جاري الانتهاء من تحديث أهم قوائم واختصارات الفينيكال</a>
+      }>Ayman Ahmed AbdelAziz - Fayoum Internal Control - Last Updated on 23/04/2024 ...جاري الانتهاء من تحديث أهم قوائم واختصارات الفينيكال</a>
     </footer>
   );
 }
