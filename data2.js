@@ -266,6 +266,7 @@ const data = {
   "مراجعة الاسترجاع بعد الشطب": { shortcut: "VRRCO", en_job: "Verify Recovery or Reversal after Charge Off ", officer: "Checker" },
   "الاعفاء واسترداد الرسوم": { shortcut: "WRF", en_job: "Waive and Refund Fee ", officer: "Maker" },
   "الغاء الاعفاء من الرسوم": { shortcut: "CFWRR", en_job: "Cancel Fee Waiver Refund or Reversal", officer: "Maker" },
-  "مراجعة الاعفاء من الرسوم": { shortcut: "VFWRR", en_job: "Verify Fee Waiver Refund or Reversal", officer: "Checker" }
+  "مراجعة الاعفاء من الرسوم": { shortcut: "VFWRR", en_job: "Verify Fee Waiver Refund or Reversal", officer: "Checker" },
+  "ادارة تفاصيل حركة ايداع تحويل بناء على طلب العميل": { shortcut: "MBITTD", en_job: "Maintain Bank Include Transfer Transaction Details", officer: "Makerالخزينة المركزية" }
 }
 export default data;
