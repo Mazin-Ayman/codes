@@ -263,6 +263,9 @@ const data = {
   "عكس شطب حساب القرض": { shortcut: "RLACO", en_job: " Reverse Loan Accout Charge Off ", officer: "Maker" },
   "استرداد بعد الشطب ": { shortcut: "RCO", en_job: "Recover after Charge Off", officer: "Maker" },
   "الغاء الاسترجاع او العكس بعد الشطب": { shortcut: "CRRCO", en_job: "Cancel Recovery or Reversal after Charge Off ", officer: "Maker" },
-  "مراجعة الاسترجاع بعد الشطب": { shortcut: "VRRCO", en_job: "Verify Recovery or Reversal after Charge Off ", officer: "Checker" }
+  "مراجعة الاسترجاع بعد الشطب": { shortcut: "VRRCO", en_job: "Verify Recovery or Reversal after Charge Off ", officer: "Checker" },
+  "الاعفاء واسترداد الرسوم": { shortcut: "WRF", en_job: "Waive and Refund Fee ", officer: "Maker" },
+  "الغاء الاعفاء من الرسوم": { shortcut: "CFWRR", en_job: "Cancel Fee Waiver Refund or Reversal", officer: "Maker" },
+  "مراجعة الاعفاء من الرسوم": { shortcut: "VFWRR", en_job: "Verify Fee Waiver Refund or Reversal", officer: "Checker" }
 }
 export default data;
