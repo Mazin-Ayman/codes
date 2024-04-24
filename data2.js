@@ -256,6 +256,13 @@ const data = {
   "الاستعلام عن ملف بيانات العملاء افراد": { shortcut: "IERC", en_job: "Inquire on Retail CIF", officer: "Maker-Checker" },
   "انشاء الي مجمع لتقرير حسابات تحت الرصيد الادنى": { shortcut: "BGMBAR", en_job: "Batch Generat Below Minimum Balance Account Report ", officer: "Maker-Checker"},
   "طباعة اليه مجمعة لرصيد عميل": { shortcut: "BPCB", en_job: "Batch Print Customer Balance ", officer: "Maker-Checker" },
-  "انشاء الى مجمع لتقرير ارصدة يومية": { shortcut: "BGDBR", en_job: "Batch Generate Day-Wise Balance Report ", officer: "Maker-Checker" }
+  "انشاء الى مجمع لتقرير ارصدة يومية": { shortcut: "BGDBR", en_job: "Batch Generate Day-Wise Balance Report ", officer: "Maker-Checker" },
+  "شطب حساب القرض": { shortcut: "COLAT", en_job: "Charge Off Loan Account", officer: "Maker" },
+  "الغاء شطب القرض قبل المراجعة": { shortcut: "CALCORWB", en_job: "Cancel Loan  Account Charge Off Reversal or Write Back ", officer: "Maker" },
+  "مراجعة شطب حساب القرض": { shortcut: "VALCRWB", en_job: "Verify Loan Account Charge Off Reversal or Write Back", officer: "Checker" },
+  "عكس شطب حساب القرض": { shortcut: "RLACO", en_job: " Reverse Loan Accout Charge Off ", officer: "Maker" },
+  "استرداد بعد الشطب ": { shortcut: "RCO", en_job: "Recover after Charge Off", officer: "Maker" },
+  "الغاء الاسترجاع او العكس بعد الشطب": { shortcut: "CRRCO", en_job: "Cancel Recovery or Reversal after Charge Off ", officer: "Maker" },
+  "مراجعة الاسترجاع بعد الشطب": { shortcut: "VRRCO", en_job: "Verify Recovery or Reversal after Charge Off ", officer: "Checker" }
 }
 export default data;
