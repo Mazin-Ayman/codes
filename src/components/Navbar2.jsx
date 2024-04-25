@@ -83,11 +83,11 @@ const Navbar2 = () => {
             أرقام حسابات أرابنك - فيناكل
             </Link>
           </li>
-          <li className={link == "six" ? "on" : ""}>
-            <Link to="/prodcodes" onClick={(e) => linksClick("six")}>
+          {/* <li className={link == "three" ? "on" : ""}>
+            <Link to="/prodcodes" onClick={(e) => linksClick("three")}>
             أكواد المنتجات على فيناكل
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </header>
