@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import { useRef, useState } from "react";
-import logo from "../../public/Eid.png";
+import logo from "../../public/newlogo424.png";
 
 import "./navbar2.css";
 
