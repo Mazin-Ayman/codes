@@ -66,7 +66,7 @@ const Nine = () => {
                 sx={{ textAlign: "center" }}
               />
             )}
-          />
+            />
         </Stack>
       </form>
       <div className="data">
@@ -79,7 +79,7 @@ const Nine = () => {
         {AccountNumberFin && (
           <div>
             <p>رقم الحساب فينكال:</p>
-            <p className="jben">{`${branchNumber}${currency}${AccountNumberFin}`}</p>
+            <p className="jben">{`${AccountNumberFin}`}</p>
           </div>
         )}
         {AccountFinAr && (
