@@ -80,7 +80,12 @@ const Navbar2 = () => {
           </li>
           <li className={link == "six" ? "on" : ""}>
             <Link to="/oldnums" onClick={(e) => linksClick("six")}>
-            أرقام حسابات أرابنك - فينكال
+            أرقام حسابات أرابنك - فيناكل
+            </Link>
+          </li>
+          <li className={link == "six" ? "on" : ""}>
+            <Link to="/prodcodes" onClick={(e) => linksClick("six")}>
+            أكواد المنتجات على فيناكل
             </Link>
           </li>
         </ul>

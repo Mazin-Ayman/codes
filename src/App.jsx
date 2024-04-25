@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Seven from "./components/Seven";
 import Eight from './components/Eight';
 import Nine from './components/Nine';
+import Ten from './components/Ten';
+
 
 const App = () => {
   return (
@@ -24,7 +26,8 @@ const App = () => {
         <Route path="/cert" element={<Five />} />
         <Route path="/dep" element={<Seven />} />
         <Route path="/payback" key={"payback"} element={<Eight />} />
-        <Route path="/oldnums" key={"payback"} element={<Nine />} />
+        <Route path="/oldnums" key={"oldnums"} element={<Nine />} />
+        <Route path="/prodcodes" key={"prodcodes"} element={<Ten />} />
       </Routes>
       <Footer />
     </div>
