@@ -25,14 +25,14 @@ const Nine = () => {
   const [AccountNameAr, setAccountNameAr] = useState('');
   const [AccountNumberFin, setAccountNumberFin] = useState('');
   const [AccountFinAr, setAccountFinAr] = useState('');
-  const [currency, setCurrency] = useState('');
-  const [branchNumber, setBranchNumber] = useState('');
+  // const [currency, setCurrency] = useState('');
+  // const [branchNumber, setBranchNumber] = useState('');
 
   const handler = () => {
     setAccountNameAr(data[id].AccArNme);
     setAccountNumberFin(data[id].AccFinNo);
     setAccountFinAr(data[id].FinAccArNme);
-    setBranchNumber(branchNumbers[branchNumber]);
+    // setBranchNumber(branchNumbers[branchNumber]);
   };
   return (
     <main className="three">
@@ -63,66 +63,6 @@ const Nine = () => {
               <TextField
                 {...params}
                 label="اكتب رقم الحساب ارابنك:"
-                sx={{ textAlign: "center" }}
-              />
-            )}
-
-          />
-          <Autocomplete
-            disablePortal
-            id="combo-box-demo"
-            options={Object.keys(branchNumbers)}
-            sx={{
-              width: 250,
-              backgroundColor: "#fff",
-              borderRadius: 1,
-              "& input": { textAlign: "center" },
-              boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-            }}
-            inputValue={branchNumber}
-            onInputChange={(e, v) => {
-              setId(v.toString());
-            }}
-            onBlur={handler}
-            onDoubleClick={() => setId("")}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") e.preventDefault();
-            }}
-            onSelect={handler}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="اسم الفرع:"
-                sx={{ textAlign: "center" }}
-              />
-            )}
-          />
-
-          <Autocomplete
-            disablePortal
-            id="combo-box-demo"
-            options={Object.keys(currencies)}
-            sx={{
-              width: 250,
-              backgroundColor: "#fff",
-              borderRadius: 1,
-              "& input": { textAlign: "center" },
-              boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-            }}
-            inputValue={currency}
-            onInputChange={(e, v) => {
-              setId(v.toString());
-            }}
-            onBlur={handler}
-            onDoubleClick={() => setId("")}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") e.preventDefault();
-            }}
-            onSelect={handler}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="اسم العملة:"
                 sx={{ textAlign: "center" }}
               />
             )}
