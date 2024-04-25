@@ -139,7 +139,7 @@ const Nine = () => {
         {AccountNumberFin && (
           <div>
             <p>رقم الحساب فينكال:</p>
-            <p className="jben">{`${branchNumber.trim()}${currency.trim()}${AccountNumberFin.trim()}`}</p>
+            <p className="jben">{`${branchNumber}${currency}${AccountNumberFin}`}</p>
           </div>
         )}
         {AccountFinAr && (
