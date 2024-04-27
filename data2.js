@@ -276,6 +276,17 @@ const data = {
   "الغاء ترحيل تعليمات مستديمة بسيطة": { shortcut: "RSSSI", en_job: "Revok Suspension Simple Standing Instruction", officer: "Maker" },
   "حذف قائمة توثيق تعليمات مستديمة": { shortcut: "DSICFL", en_job: "Delete Standing Instruction Carry Forward List", officer: "Maker" },
   "حذف تعليمات مستديمة بسيطة": { shortcut: "DSSI", en_job: "Delete Simple Standing Instruction", officer: "Maker" },
-  "الاستعلام عن التعليمات المستديمة البسيطة": { shortcut: "ISSIN", en_job: "Inquire on Simple Standing Instruction", officer: "Maker-Checker" }
+  "الاستعلام عن التعليمات المستديمة البسيطة": { shortcut: "ISSIN", en_job: "Inquire on Simple Standing Instruction", officer: "Maker-Checker" },
+  " ايقاف صرف شيك": { shortcut: "SCPS", en_job: "Stop Cheque Payments", officer: "Maker" },
+  "الغاء دفع الشيكات الموقوفة": { shortcut: "CSCPS", en_job: "Cancel Stopped Cheque Payments", officer: "Maker" },
+  "مراجعة الشيكات موقوفة الصرف": { shortcut: "VSCPS", en_job: "Verify Stopped Cheque Payments", officer: "Checker" },
+  "عكس ايقاف صرف الشيك": { shortcut: "RSCPS", en_job: "Revok Stopped Cheque Payments", officer: "Maker" },
+  "تعديل حالة الشيك": { shortcut: "MCSS", en_job: "Modify Cheque Status", officer: "Maker" },
+  "الغاء تعديل حالة الشيك": { shortcut: "CCSMN", en_job: "Cancel Cheque Status Modification", officer: "Maker" },
+  "مراجعة تعديل حالة الشيك": { shortcut: "VCSMN", en_job: "Verify Cheque Status Modification", officer: "Checker" },
+  "اعدام دفتر شيكات": { shortcut: "DCB", en_job: "Destroy Cheque Book", officer: "Maker" },
+  "الغاء عملية اعدام دفتر الشيكات": { shortcut: "CCBDO", en_job: "Cancel Cheque Book Destroying Operation", officer: "Maker" },
+  "مراجعة عملية اعدام دفتر شيكات": { shortcut: "VCBDO", en_job: "Verify Cheque Book Destroying Ooeration", officer: "Checker" },
+  "الاستعلام عن دفتر شيكات": { shortcut: "ICB", en_job: "Inquire On Cheque Book", officer: "Maker-Checker" }
 }
 export default data;
