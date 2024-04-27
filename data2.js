@@ -287,6 +287,7 @@ const data = {
   "اعدام دفتر شيكات": { shortcut: "DCB", en_job: "Destroy Cheque Book", officer: "Maker" },
   "الغاء عملية اعدام دفتر الشيكات": { shortcut: "CCBDO", en_job: "Cancel Cheque Book Destroying Operation", officer: "Maker" },
   "مراجعة عملية اعدام دفتر شيكات": { shortcut: "VCBDO", en_job: "Verify Cheque Book Destroying Ooeration", officer: "Checker" },
-  "الاستعلام عن دفتر شيكات": { shortcut: "ICB", en_job: "Inquire On Cheque Book", officer: "Maker-Checker" }
+  "الاستعلام عن دفتر شيكات": { shortcut: "ICB", en_job: "Inquire On Cheque Book", officer: "Maker-Checker" },
+  "طلب-حذف-تعديل-استعلام-مراجعة دفتر شيكات": { shortcut: "CCHQBOOK", en_job: "Cheque Book Request Maintenance", officer: "Maker-Checker" }
 }
 export default data;
