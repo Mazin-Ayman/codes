@@ -267,6 +267,15 @@ const data = {
   "الاعفاء واسترداد الرسوم": { shortcut: "WRF", en_job: "Waive and Refund Fee ", officer: "Maker" },
   "الغاء الاعفاء من الرسوم": { shortcut: "CFWRR", en_job: "Cancel Fee Waiver Refund or Reversal", officer: "Maker" },
   "مراجعة الاعفاء من الرسوم": { shortcut: "VFWRR", en_job: "Verify Fee Waiver Refund or Reversal", officer: "Checker" },
-  "ادارة تفاصيل حركة ايداع تحويل بناء على طلب العميل": { shortcut: "MBITTD", en_job: "Maintain Bank Include Transfer Transaction Details", officer: "Makerالخزينة المركزية" }
+  "ادارة تفاصيل حركة ايداع تحويل بناء على طلب العميل": { shortcut: "MBITTD", en_job: "Maintain Bank Include Transfer Transaction Details", officer: "Makerالخزينة المركزية" },
+  "اضافة التعليمات المستديمة": { shortcut: "ASSI", en_job: "Add Simple Standing Instruction", officer: "Maker" },
+  "الغاء تعليمات مستديمة بسيطة قبل المراجعة": { shortcut: "CSSIV", en_job: "Cancel Simple Standing Instruction before Verification", officer: "Maker" },
+  "مراجعة تعليمات مستديمة بسيطة ": { shortcut: "VSSI", en_job: "Verify Simple Standing Instruction", officer: "Checker" },
+  "تعديل تعليمات مستديمة بسيطة": { shortcut: "MSSI", en_job: "Modify Simple Standing Instruction", officer: "Maker" },
+  "تعليق تعليمات مستديمة بسيطة": { shortcut: "SSSI", en_job: "Suspend Simple Standing Instruction", officer: "Maker" },
+  "الغاء ترحيل تعليمات مستديمة بسيطة": { shortcut: "RSSSI", en_job: "Revok Suspension Simple Standing Instruction", officer: "Maker" },
+  "حذف قائمة توثيق تعليمات مستديمة": { shortcut: "DSICFL", en_job: "Delete Standing Instruction Carry Forward List", officer: "Maker" },
+  "حذف تعليمات مستديمة بسيطة": { shortcut: "DSSI", en_job: "Delete Simple Standing Instruction", officer: "Maker" },
+  "الاستعلام عن التعليمات المستديمة البسيطة": { shortcut: "ISSIN", en_job: "Inquire on Simple Standing Instruction", officer: "Maker-Checker" }
 }
 export default data;
