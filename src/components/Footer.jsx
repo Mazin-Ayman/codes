@@ -7,7 +7,7 @@ const Footer = () => {
           fontWeight: 'bold', 
           color: 'blue',
         }
-      }>Ayman Ahmed AbdelAziz - Fayoum Internal Control - The page is being constructed... </a>
+      }>تصميم وتنفيذ - أيمن أحمد عبدالعزيز حسين - إدارة الرقابة الداخلية بالفيوم </a>
     </footer>
   );
 }
