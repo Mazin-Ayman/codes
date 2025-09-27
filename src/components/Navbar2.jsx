@@ -63,12 +63,12 @@ const Navbar2 = () => {
               الفئات التسليفية الزراعية
             </Link>
           </li>
-          <li className={link == "five" ? "on" : ""}>
+          <li className={link == "five" ? "on" : ""} style={{ display: "none" }}>
             <Link to="/cert" onClick={(e) => linksClick("five")}>
               استرداد شهادة مجددة
             </Link>
           </li>
-          <li className={link == "six" ? "on" : ""}>
+          <li className={link == "six" ? "on" : ""} style={{ display: "none" }}>
             <Link to="/dep" onClick={(e) => linksClick("six")}>
               كسر وديعة قبل الاستحقاق
             </Link>
