@@ -1,7 +1,7 @@
-import data from "./../../data2";
+import data from "../data/jobShortcuts";
 import { useState } from "react";
 import { Autocomplete, Stack, TextField } from "@mui/material";
-const Three = () => {
+const JobShortcutsLookup = () => {
   const [id, setId] = useState("");
   const [shortcut, setShortcut] = useState(null);
   const [jobEn, setJobEn] = useState(null);
@@ -77,4 +77,4 @@ const Three = () => {
     </main>
   );
 };
-export default Three;
+export default JobShortcutsLookup;

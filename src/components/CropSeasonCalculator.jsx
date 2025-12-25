@@ -1,42 +1,28 @@
 import { useState } from "react";
 import { Autocomplete, Stack, TextField } from "@mui/material";
-import data from "./../../data3";
+// import data from "../../output/out";
+import data from "../data/cropSeasons";
 
-const Four = () => {
+
+const CropSeasonCalculator = () => {
   const [season, setSeason] = useState("");
   const [crop, setCrop] = useState("");
-  const [trVal, setTrVal] = useState(null);
-  const [trValInd, setTrValInd] = useState(null);
-  const [trValMinValCor, setTrValMinValCor] = useState(null);
-  const [maxValCor, setMaxValCor] = useState(null);
-  const [modVal, setModVal] = useState(null);
-  const [begin, setBegin] = useState(null);
-  const [end, setEnd] = useState(null);
-  const [due, setDue] = useState(null);
-  const [instNumber, setInstNumber] = useState(null);
-  const [instDate, setInstDate] = useState(null);
-  const [notes, setNotes] = useState(null);
 
-  const handler = () => {
-    setTrVal(data[season][crop].tr_val);
-    setModVal(data[season][crop].mod_val);
-    setBegin(data[season][crop].begin);
-    setEnd(data[season][crop].end);
-    setDue(data[season][crop].due);
-    setInstNumber(data[season][crop].inst_no);
-    setInstDate(data[season][crop].inst_dte);
-    setNotes(data[season][crop].notes);
-    setTrValInd(data[season][crop].tr_va_ind);
-    setTrValMinValCor(data[season][crop].min_val_cor);
-    setMaxValCor(data[season][crop].max_val_cor);
+  // Helper to safely get crop data
+  const getCropData = () => {
+    if (season && crop && data[season] && data[season][crop]) {
+      return data[season][crop];
+    }
+    return null;
   };
+
+  const cropData = getCropData();
 
   return (
     <main className="four">
       <form onSubmit={(e) => e.target.preventDefault()}>
         <Stack spacing={3} sx={{ width: "100%" }}>
           <Autocomplete
-            // disablePortal
             id="season-inp"
             options={Object.keys(data)}
             sx={{
@@ -51,18 +37,10 @@ const Four = () => {
               "& *": { fontFamily: "Cairo" },
             }}
             inputValue={season}
-            onInputChange={(e, v, r) => {
-              if (v) {
-                setSeason(v);
-                console.log(e, r, v);
-              } else {
-                console.log("Error accured");
-              }
-            }}
-            onDoubleClick={() => setSeason("")}
-            // onSelect={}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") e.preventDefault();
+            onInputChange={(e, v) => {
+              setSeason(v || "");
+              // Reset crop when season changes
+              setCrop("");
             }}
             renderInput={(params) => (
               <TextField
@@ -73,11 +51,10 @@ const Four = () => {
             )}
           />
 
-          {season && season !== "" && season != null && (
+          {season && (
             <Autocomplete
-              disablePortal
               id="crop-inp"
-              options={season in data && Object.keys(data[`${season}`])}
+              options={data[season] ? Object.keys(data[season]) : []}
               sx={{
                 width: 250,
                 backgroundColor: "#fff",
@@ -90,14 +67,8 @@ const Four = () => {
               }}
               inputValue={crop}
               onInputChange={(e, v) => {
-                setCrop(v.toString());
+                setCrop(v || "");
               }}
-              onBlur={handler}
-              onDoubleClick={() => setCrop("")}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") e.preventDefault();
-              }}
-              onSelect={handler}
               renderInput={(params) => (
                 <TextField
                   {...params}
@@ -109,82 +80,83 @@ const Four = () => {
           )}
         </Stack>
       </form>
-      {crop && crop !== "" && (
+
+      {cropData && (
         <div className="data">
-          {/* {()} */}
-          {trVal && trVal != null && (
+          {cropData.tr_val && (
             <div className="tr-val">
               <span className="data-item-title">ري عادي:</span>
-              <span className="data-item-value">{trVal}</span>
+              <span className="data-item-value">{cropData.tr_val}</span>
             </div>
           )}
 
-          {modVal && modVal != null && (
+          {cropData.mod_val && (
             <div className="mod-val">
               <span className="data-item-title">ري حديث:</span>
-              <span className="data-item-value">{modVal}</span>
+              <span className="data-item-value">{cropData.mod_val}</span>
             </div>
           )}
-          {trValInd && trValInd != null && (
+
+          {cropData.tr_va_ind && (
             <div className="tr-val-ind">
               <span className="data-item-title">ري عادي أفراد:</span>
-              <span className="data-item-value">{trValInd}</span>
+              <span className="data-item-value">{cropData.tr_va_ind}</span>
             </div>
           )}
 
-          {trValMinValCor && trValMinValCor != null && (
+          {cropData.min_val_cor && (
             <div className="tr-val-ind">
               <span className="data-item-title">حد أدنى عادي شركات:</span>
-              <span className="data-item-value">{trValMinValCor}</span>
+              <span className="data-item-value">{cropData.min_val_cor}</span>
             </div>
           )}
 
-          {maxValCor && maxValCor != null && (
+          {cropData.max_val_cor && (
             <div className="tr-val-ind">
               <span className="data-item-title">حد أقصى عادي شركات:</span>
-              <span className="data-item-value">{maxValCor}</span>
+              <span className="data-item-value">{cropData.max_val_cor}</span>
             </div>
           )}
 
-          {begin && begin != null && (
+          {cropData.begin && (
             <div className="begin-date">
               <span className="data-item-title">بداية المنح:</span>
-              <span className="data-item-value">{begin}</span>
+              <span className="data-item-value">{cropData.begin}</span>
             </div>
           )}
 
-          {end && end != null && (
+          {cropData.end && (
             <div className="end-date">
               <span className="data-item-title">نهاية المنح:</span>
-              <span className="data-item-value">{end}</span>
+              <span className="data-item-value">{cropData.end}</span>
             </div>
           )}
 
-          {due && due != null && (
+          {cropData.due && (
             <div className="due">
               <span className="data-item-title">تاريخ الاستحقاق:</span>
-              <span className="data-item-value">{due}</span>
+              <span className="data-item-value">{cropData.due}</span>
             </div>
           )}
 
-          {instNumber && instNumber != null && (
+          {cropData.inst_no && (
             <div className="inst-number">
               <span className="data-item-title">كتاب دوري رقم:</span>
-              <span className="data-item-value">{instNumber}</span>
+              <span className="data-item-value">{cropData.inst_no}</span>
             </div>
           )}
 
-          {instDate && instDate != null && (
+          {cropData.inst_dte && (
             <div className="inst-date">
               <span className="data-item-title">بتاريخ:</span>
-              <span className="data-item-value">{instDate}</span>
+              <span className="data-item-value">{cropData.inst_dte}</span>
             </div>
           )}
 
-          {notes && notes != null && (
+          {cropData.notes && (
             <div className="notes">
               <span className="data-item-title">ملاحظات:</span>
-              <span className="data-item-value">{notes}</span>
+              <span className="data-item-value">{cropData.notes}</span>
             </div>
           )}
         </div>
@@ -193,4 +165,4 @@ const Four = () => {
   );
 };
 
-export default Four;
+export default CropSeasonCalculator;

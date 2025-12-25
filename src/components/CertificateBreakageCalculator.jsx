@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 // import "../tailwind.css";
-const Five = () => {
+const CertificateBreakageCalculator = () => {
   const [certType, setCertType] = useState("11");
   const [certVal, setCertVal] = useState("");
   const [certAd, setCertAd] = useState(0);
@@ -43,7 +43,7 @@ const Five = () => {
             >
               <option value="11">11% شهري</option>
               <option value="16">16% ربع سنوي</option>
-             <option value="17">17% سنوي</option>
+              <option value="17">17% سنوي</option>
               <option value="19">19% شهري</option>
               <option value="19.50">19.5% ربع سنوي</option>
             </select>
@@ -117,4 +117,4 @@ const Five = () => {
   );
 };
 
-export default Five;
+export default CertificateBreakageCalculator;

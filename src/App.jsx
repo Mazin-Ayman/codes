@@ -1,33 +1,33 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import One from "./components/One";
-import Two from "./components/Two";
-import Three from "./components/Three";
-import Four from "./components/Four";
-import Five from "./components/Five";
-import Navbar2 from "./components/Navbar2";
+import CreditScoreEvaluator from "./components/CreditScoreEvaluator";
+import BankCodeLookup from "./components/BankCodeLookup";
+import JobShortcutsLookup from "./components/JobShortcutsLookup";
+import CropSeasonCalculator from "./components/CropSeasonCalculator";
+import CertificateBreakageCalculator from "./components/CertificateBreakageCalculator";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Seven from "./components/Seven";
-import Eight from './components/Eight';
-import Nine from './components/Nine';
-import Ten from './components/Ten';
+import SimpleDepositInterestCalculator from "./components/SimpleDepositInterestCalculator";
+import CertificateRedemptionTable from './components/CertificateRedemptionTable';
+import AccountMapper from './components/AccountMapper';
+import ProductCodeLookup from './components/ProductCodeLookup';
 
 
 const App = () => {
   return (
     <div className="app">
-      <Navbar2 />
+      <Navbar />
       <Routes>
-        <Route path="/" element={<One />} />
-        <Route path="/code" element={<Two />} />
-        <Route path="/short" element={<Three />} />
-        <Route path="/cr" element={<Four />} />
-        <Route path="/cert" element={<Five />} />
-        <Route path="/dep" element={<Seven />} />
-        <Route path="/payback" key={"payback"} element={<Eight />} />
-        <Route path="/oldnums" key={"oldnums"} element={<Nine />} />
-        <Route path="/prodcodes" key={"prodcodes"} element={<Ten />} />
+        <Route path="/" element={<CreditScoreEvaluator />} />
+        <Route path="/code" element={<BankCodeLookup />} />
+        <Route path="/short" element={<JobShortcutsLookup />} />
+        <Route path="/cr" element={<CropSeasonCalculator />} />
+        <Route path="/cert" element={<CertificateBreakageCalculator />} />
+        <Route path="/dep" element={<SimpleDepositInterestCalculator />} />
+        <Route path="/payback" key={"payback"} element={<CertificateRedemptionTable />} />
+        <Route path="/oldnums" key={"oldnums"} element={<AccountMapper />} />
+        <Route path="/prodcodes" key={"prodcodes"} element={<ProductCodeLookup />} />
       </Routes>
       <Footer />
     </div>

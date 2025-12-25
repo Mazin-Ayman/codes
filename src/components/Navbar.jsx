@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import { useRef, useState } from "react";
-import logo from "../../public/NewLogo44.jpg";
+import logo from "../../src/NewLogo44.jpg";
 
 import "./navbar2.css";
 
@@ -78,11 +78,12 @@ const Navbar2 = () => {
             الجداول الاستردادية للشهادات
             </Link>
           </li>
-          <li className={link == "six" ? "on" : ""}>
+          {/*<li className={link == "six" ? "on" : ""}>
             <Link to="/oldnums" onClick={(e) => linksClick("six")}>
             أرقام حسابات أرابنك - فيناكل
             </Link>
           </li>
+          */}
           <li className={link == "three" ? "on" : ""}>
             <Link to="/prodcodes" onClick={(e) => linksClick("three")}>
             أكواد المنتجات على فيناكل

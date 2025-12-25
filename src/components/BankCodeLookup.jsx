@@ -1,22 +1,14 @@
-import data from './../../data';
+import data from '../data/bankCodes';
 import { useState } from 'react';
 import { Autocomplete, Stack, TextField } from '@mui/material';
-const Two = () => {
+const BankCodeLookup = () => {
   const [id, setId] = useState('');
-  const [bankAr, setBankAr] = useState(null);
-  const [bankEn, setBankEn] = useState(null);
-  const handler = () => {
-    // if (!id || id === "") {
-    //   setBankAr("")
-    //   setBankEn("")
-    //   return;
-    // };
-    setBankAr(data[id].bankNameAr)
-    setBankEn(data[id].bankNameEn)
-  }
+
+  const bankInfo = id && data[id] ? data[id] : null;
+
   return (
     <main className='two'>
-      <form onSubmit={(e) => e.target.preventDefault()}>
+      <form onSubmit={(e) => e.preventDefault()}>
         <Stack sx={{ width: '100%' }}>
           <Autocomplete
             disablePortal
@@ -25,24 +17,18 @@ const Two = () => {
             sx={{ width: 250, backgroundColor: "#fff", borderRadius: 1, '& input': { textAlign: 'center' }, boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px' }}
             inputValue={id}
             onInputChange={(e, v) => {
-              setId(v.toString())
+              setId(v ? v.toString() : '');
             }}
-            onBlur={handler}
             onDoubleClick={() => setId('')}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') e.preventDefault();
-            }}
-            onSelect={handler}
             renderInput={(params) => <TextField {...params} label="الكود الوارد باستعلام iScore" sx={{ textAlign: 'center' }} />}
-            // freeSolo
           />
         </Stack>
       </form>
       <div className='data'>
-        {bankAr && <p className='bankNameAr'>{bankAr}</p>}
-        {bankEn && <p className='bankNameEn'>{bankEn}</p>}
+        {bankInfo && bankInfo.bankNameAr && <p className='bankNameAr'>{bankInfo.bankNameAr}</p>}
+        {bankInfo && bankInfo.bankNameEn && <p className='bankNameEn'>{bankInfo.bankNameEn}</p>}
       </div>
     </main>
   );
 }
-export default Two;
+export default BankCodeLookup;

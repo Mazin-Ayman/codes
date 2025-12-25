@@ -1,15 +1,15 @@
 import { useState } from "react";
-import data from "./../../data4";
+import data from "../data/certificateRedemptionTables";
 
-const Eight = () => {
+const CertificateRedemptionTable = () => {
   const [certType, setCertType] = useState("شهادة الحصاد 11");
   const [certVal, setCertVal] = useState("");
   const [month, setMonth] = useState(7);
   const [certPayBackVal, setCertPayBackVal] = useState(0);
-  
+
   const [isVisisble, setIsVisable] = useState(false);
   const handle = (e) => {
-    if (certVal == null || certVal == undefined || certVal == "" || certVal == NaN) return;
+    if (certVal == null || certVal == undefined || certVal == "" || isNaN(certVal)) return;
     let payBackVal = parseFloat(data[`${certType}`].filter(ele => ele.PayMnth == month)[0].PayBckVal);
     // PayBckVal * certVal
     let result = payBackVal * parseInt(certVal);
@@ -62,7 +62,7 @@ const Eight = () => {
           </div>
           <div className="month-con">
             <label className="my-label" htmlFor="monthVal">
-            شهر الاستـرداد:
+              شهر الاستـرداد:
             </label>
             <select
               id="monthVal"
@@ -70,8 +70,8 @@ const Eight = () => {
               onChange={(e) => setMonth(e.target.value)}
               value={month}
             >
-              {Array.from({ length: 30 }, (_, idx) => idx++ ).map(element => (
-                <option value={element+6}>{element+6}</option>
+              {Array.from({ length: 30 }, (_, idx) => idx++).map(element => (
+                <option value={element + 6}>{element + 6}</option>
               ))}
             </select>
           </div>
@@ -81,16 +81,16 @@ const Eight = () => {
       {isVisisble && (<div className="outputs">
         <div className="certPayBack">
           <label htmlFor="certPayBackSpan" className="my-label">
-          القيمة الاستردادية للشهادة:
+            القيمة الاستردادية للشهادة:
           </label>
           <span id="certPayBackSpan" className="val">
             {certPayBackVal}
           </span>
         </div>
       </div>)}
-      
+
     </main>
   );
 };
 
-export default Eight;
+export default CertificateRedemptionTable;

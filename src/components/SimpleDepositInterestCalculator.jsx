@@ -1,52 +1,51 @@
-import { useEffect } from "react";
 import { useState } from "react";
 
-const Seven = () => {
+const SimpleDepositInterestCalculator = () => {
   const [dur, setDur] = useState("");
   const [depVal, setDepVal] = useState("");
-  const [intVal, setIntVal] = useState(0);
-  const [rate, setRate] = useState(0);
-  const [linkVis, setLinkVis] = useState(false);
 
-  useEffect(() => {
-    calculateInterest();
-  }, [rate, dur, depVal]);
-
-  const calculateInterest = () => {
+  const calculateValues = () => {
     const duration = parseInt(dur);
     const depositVal = parseFloat(depVal);
+
     if (
       isNaN(duration) ||
       duration <= 0 ||
       duration < 7 ||
-      depositVal <= 0 ||
-      depVal == "" ||
-      depVal == null
+      isNaN(depositVal) ||
+      depositVal <= 0
     ) {
-      setIntVal(0);
-      setRate(0);
-      setLinkVis(false);
-      return;
+      return { intVal: 0, rate: 0, linkVis: false };
     }
 
     const rateMap = {
       7: 0,
-      15: 0.0125 * 10,
-      30: 0.0225 * 10,
-      90: 0.0475 * 10,
-      180: 0.05 * 10,
-      720: 0.0525 * 10,
-      1080: 0.055 * 10,
-      99999: 0.0575 * 10,
+      15: 0.0125,
+      30: 0.0225,
+      90: 0.0475,
+      180: 0.05,
+      720: 0.0525,
+      1080: 0.055,
+      99999: 0.0575,
     };
 
-    const selectedRate = Object.keys(rateMap).find((key) => duration < key);
-    setRate(rateMap[selectedRate]);
+    // Find the first key that is strictly greater than duration
+    // Note: The original logic was `duration < key` 
+    // keys in JS objects are strings, but comparison loosely works. 
+    // Better to ensure numeric comparison.
+    const threshold = Object.keys(rateMap).map(Number).sort((a, b) => a - b).find((key) => duration < key);
+    const rate = rateMap[threshold] || 0;
 
-    const outputValue = (duration / 365) * parseFloat(depVal) * rate;
-    setIntVal(outputValue.toFixed(2));
-    setLinkVis(true);
+    const outputValue = (duration / 365) * depositVal * rate;
+
+    return {
+      intVal: outputValue,
+      rate: rate,
+      linkVis: true,
+    };
   };
+
+  const { intVal, rate, linkVis } = calculateValues();
 
   return (
     <main className="seven">
@@ -73,13 +72,13 @@ const Seven = () => {
           <p className="rate">
             معدل الفائدة:{" "}
             <span className="value">
-              {intVal === 0 ? "0%" : (rate * 10).toFixed(2) + "%"}
+              {rate === 0 ? "0%" : (rate * 100).toFixed(2) + "%"}
             </span>
           </p>
           <p className="int-rate">
             قيمة الفائدة:{" "}
             <span className="value">
-              {intVal === 0 ? "0" : (intVal / 10).toFixed(2)}
+              {intVal === 0 ? "0" : intVal.toFixed(2)}
             </span>
           </p>
         </div>
@@ -106,4 +105,4 @@ const Seven = () => {
   );
 };
 
-export default Seven;
+export default SimpleDepositInterestCalculator;
