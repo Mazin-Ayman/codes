@@ -15,7 +15,7 @@ path = Path(r"C:/Users/ayman/OneDrive/Desktop/crops.xlsx")
 wb = load_workbook(filename=path, read_only=True)
 
 sheet = wb["cropFixed"]
-rng = sheet["A3":"J156"]
+rng = sheet["A3":"J162"]
 
 obj = {}
 
@@ -26,7 +26,7 @@ for season in seasons:
     obj[season] = {}
 
 for row in rng:
-    season, crop, normal_irrigation, modern_irrigation,  giving_start, giving_end, due_date, inst_number, inst_date, notes = (c.value for c in row)
+    season, crop, normal_irrigation, modern_irrigation, giving_start, giving_end, due_date, inst_number, inst_date, notes = (c.value for c in row)
     # print(*row, sep="\n")
     # break
     obj[season][crop] = {
