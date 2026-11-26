@@ -1,0 +1,20 @@
+// Ordered display fields for both shapes of crop-season records.
+export const CROP_FIELDS = [
+  ["tr_ind_val", "ري عادي أفراد"],
+  ["mod_ind_val", "ري حديث أفراد"],
+  ["min_tr_comp_val", "حد أدنى ري عادي شركات"],
+  ["max_tr_comp_val", "حد أقصى ري عادي شركات"],
+  ["min_mod_comp_val", "حد أدنى ري حديث شركات"],
+  ["max_mod_comp_val", "حد أقصى ري حديث شركات"],
+  ["tr_val", "ري عادي"],
+  ["mod_val", "ري حديث"],
+  ["tr_va_ind", "ري عادي أفراد"],
+  ["min_val_cor", "حد أدنى عادي شركات"],
+  ["max_val_cor", "حد أقصى عادي شركات"],
+  ["begin", "بداية المنح"],
+  ["end", "نهاية المنح"],
+  ["due", "تاريخ الاستحقاق"],
+  ["inst_no", "كتاب دوري رقم"],
+  ["inst_dte", "بتاريخ"],
+  ["notes", "ملاحظات"],
+];

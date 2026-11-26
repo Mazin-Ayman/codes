@@ -1,98 +1,68 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import ThemeToggle from "../theme/ThemeToggle";
+import logo from "../NewLogo44.jpg";
 
-import { useRef, useState } from "react";
-import logo from "../../src/NewLogo44.jpg";
+// /cert, /dep and /tiered stay reachable by URL but are intentionally
+// left out of the menu, matching the original app.
+const NAV_LINKS = [
+  { to: "/", label: "درجة التقييم الرقمي" },
+  { to: "/code", label: "أكواد البنوك بتقرير iScore" },
+  { to: "/short", label: "قوائم واختصارات الـ Finacle" },
+  { to: "/cr", label: "الفئات التسليفية الزراعية" },
+  { to: "/payback", label: "الجداول الاستردادية للشهادات" },
+  { to: "/prodcodes", label: "أكواد المنتجات على فيناكل" },
+];
 
-import "./navbar2.css";
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
 
-const Navbar2 = () => {
-  const [link, setLink] = useState("one");
-  const navigate = useNavigate();
-  const menuRef = useRef();
-  const linksRef = useRef();
-
-  const handleClick = () => {
-    [menuRef, linksRef].map((one) => one.current.classList.toggle("active"));
-  };
-  const linksClick = (linkName) => {
-    setLink(linkName);
-    [menuRef, linksRef].map((one) => one.current.classList.toggle("active"));
-  };
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
-    <header className="navbar2">
-      <nav>
-        <div className="mine" ref={menuRef} onClick={handleClick}>
-          <span></span>
-          <span></span>
-          <span></span>
+    <header className="site-header">
+      <nav className="site-nav" aria-label="القائمة الرئيسية">
+        <div className="site-nav__actions">
+          <button
+            type="button"
+            className={`menu-toggle${isOpen ? " is-open" : ""}`}
+            aria-label={isOpen ? "إغلاق القائمة" : "فتح القائمة"}
+            aria-expanded={isOpen}
+            aria-controls="site-menu"
+            onClick={() => setIsOpen((open) => !open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+          <ThemeToggle />
         </div>
-        <div
-          className="logo-box"
-          onClick={() => {
-            navigate("/");
-            setLink("one");
-          }}
-        >
-          <img
-            className="logo-img"
-            src={logo}
-            alt="logo"
-          />
-        </div>
+        <Link to="/" className="site-logo" aria-label="الصفحة الرئيسية">
+          <img className="site-logo__img" src={logo} alt="شعار" />
+        </Link>
       </nav>
-      <div className="links" ref={linksRef}>
-        <ul>
-          <li className={link === "one" ? "on" : ""}>
-            <Link to="/" onClick={(e) => linksClick("one")}>
-              درجة التقييم الرقمي
-            </Link>
-          </li>
-          <li className={link === "two" ? "on" : ""}>
-            <Link to="/code" onClick={(e) => linksClick("two")}>
-               أكواد البنوك بتقرير iScore
-            </Link>
-          </li>
-          <li className={link === "three" ? "on" : ""}>
-            <Link to="/short" onClick={(e) => linksClick("three")}>
-               قوائم واختصارات الـ Finacle
-            </Link>
-          </li>
-          <li className={link == "four" ? "on" : ""}>
-            <Link to="/cr" onClick={(e) => linksClick("four")}>
-              الفئات التسليفية الزراعية
-            </Link>
-          </li>
-          <li className={link == "five" ? "on" : ""} style={{ display: "none" }}>
-            <Link to="/cert" onClick={(e) => linksClick("five")}>
-              استرداد شهادة مجددة
-            </Link>
-          </li>
-          <li className={link == "six" ? "on" : ""} style={{ display: "none" }}>
-            <Link to="/dep" onClick={(e) => linksClick("six")}>
-              كسر وديعة قبل الاستحقاق
-            </Link>
-          </li>
-          <li className={link == "six" ? "on" : ""}>
-            <Link to="/payback" onClick={(e) => linksClick("six")}>
-            الجداول الاستردادية للشهادات
-            </Link>
-          </li>
-          {/*<li className={link == "six" ? "on" : ""}>
-            <Link to="/oldnums" onClick={(e) => linksClick("six")}>
-            أرقام حسابات أرابنك - فيناكل
-            </Link>
-          </li>
-          */}
-          <li className={link == "three" ? "on" : ""}>
-            <Link to="/prodcodes" onClick={(e) => linksClick("three")}>
-            أكواد المنتجات على فيناكل
-            </Link>
-          </li>
+      <div id="site-menu" className={`site-menu${isOpen ? " is-open" : ""}`}>
+        <ul className="site-menu__list">
+          {NAV_LINKS.map(({ to, label }) => (
+            <li key={to}>
+              <NavLink
+                to={to}
+                end={to === "/"}
+                className={({ isActive }) =>
+                  `site-menu__link${isActive ? " is-active" : ""}`
+                }
+              >
+                {label}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
     </header>
   );
 };
 
-export default Navbar2;
+export default Navbar;

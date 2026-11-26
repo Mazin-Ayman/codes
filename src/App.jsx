@@ -1,23 +1,29 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import CreditScoreEvaluator from "./components/CreditScoreEvaluator";
-import BankCodeLookup from "./components/BankCodeLookup";
-import JobShortcutsLookup from "./components/JobShortcutsLookup";
-import CropSeasonCalculator from "./components/CropSeasonCalculator";
-import CertificateBreakageCalculator from "./components/CertificateBreakageCalculator";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import SimpleDepositInterestCalculator from "./components/SimpleDepositInterestCalculator";
-import CertificateRedemptionTable from './components/CertificateRedemptionTable';
-import AccountMapper from './components/AccountMapper';
-import ProductCodeLookup from './components/ProductCodeLookup';
+import { lazy, Suspense } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
 
+const CreditScoreEvaluator = lazy(() => import("./features/creditScore/CreditScoreEvaluator"));
+const BankCodeLookup = lazy(() => import("./features/bankCodes/BankCodeLookup"));
+const JobShortcutsLookup = lazy(() => import("./features/jobShortcuts/JobShortcutsLookup"));
+const CropSeasonCalculator = lazy(() => import("./features/cropSeasons/CropSeasonCalculator"));
+const CertificateBreakageCalculator = lazy(
+  () => import("./features/certificateBreakage/CertificateBreakageCalculator")
+);
+const CertificateRedemptionTable = lazy(
+  () => import("./features/certificateRedemption/CertificateRedemptionTable")
+);
+const SimpleDepositInterestCalculator = lazy(
+  () => import("./features/depositInterest/SimpleDepositInterestCalculator")
+);
+const TieredDepositCalculator = lazy(
+  () => import("./features/tieredDeposit/TieredDepositCalculator")
+);
+const AccountMapper = lazy(() => import("./features/accountMapper/AccountMapper"));
+const ProductCodeLookup = lazy(() => import("./features/productCodes/ProductCodeLookup"));
 
-const App = () => {
-  return (
-    <div className="app">
-      <Navbar />
+const App = () => (
+  <Layout>
+    <Suspense fallback={<p className="route-loading">جارٍ التحميل...</p>}>
       <Routes>
         <Route path="/" element={<CreditScoreEvaluator />} />
         <Route path="/code" element={<BankCodeLookup />} />
@@ -25,13 +31,14 @@ const App = () => {
         <Route path="/cr" element={<CropSeasonCalculator />} />
         <Route path="/cert" element={<CertificateBreakageCalculator />} />
         <Route path="/dep" element={<SimpleDepositInterestCalculator />} />
-        <Route path="/payback" key={"payback"} element={<CertificateRedemptionTable />} />
-        <Route path="/oldnums" key={"oldnums"} element={<AccountMapper />} />
-        <Route path="/prodcodes" key={"prodcodes"} element={<ProductCodeLookup />} />
+        <Route path="/tiered" element={<TieredDepositCalculator />} />
+        <Route path="/payback" element={<CertificateRedemptionTable />} />
+        <Route path="/oldnums" element={<AccountMapper />} />
+        <Route path="/prodcodes" element={<ProductCodeLookup />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-      <Footer />
-    </div>
-  );
-};
+    </Suspense>
+  </Layout>
+);
 
 export default App;
