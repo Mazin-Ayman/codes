@@ -1,241 +1,799 @@
 const codes = {
-  "PC00990001": { bankNameAr: "البنك المركزى المصري", bankNameEn: "Central Bank Of Egypt" },
+  "CB01280001": {
+    bankNameAr: "المصرف المتحد",
+    bankNameEn: "THE UNITED BANK",
+    classification: "بنك"
+  },
+  "CB13000001": {
+    bankNameAr: "البنك التجاري الدولي",
+    bankNameEn: "COMMERCIAL INTERNATIONAL BANK",
+    classification: "بنك"
+  },
+  "CB14000001": {
+    bankNameAr: "بنك بلوم مصر ش.م.م",
+    bankNameEn: "BLOM BANK EGYPT S.A.E",
+    classification: "بنك"
+  },
+  "CB15000001": {
+    bankNameAr: "بنك الإمارات دبي الوطني",
+    bankNameEn: "EMIRATES NBD",
+    classification: "بنك"
+  },
+  "CB17000001": {
+    bankNameAr: "بنك قناة السويس",
+    bankNameEn: "SUEZ CANAL BANK",
+    classification: "بنك"
+  },
+  "CB19000001": {
+    bankNameAr: "بنك أبوظبي الأول مصر",
+    bankNameEn: "FAB MISR",
+    classification: "بنك"
+  },
+  "CB20000001": {
+    bankNameAr: "البنك الأهلي المتحد (مصر) ش.م.م",
+    bankNameEn: "AHLI UNITED BANK (EGYPT) S.A.E",
+    classification: "بنك"
+  },
+  "CB23000001": {
+    bankNameAr: "بنك فيصل الإسلامي المصري",
+    bankNameEn: "FAISAL ISLAMIC BANK OF EGYPT",
+    classification: "بنك"
+  },
+  "CB24000001": {
+    bankNameAr: "البنك الأهلي الكويتي - مصر",
+    bankNameEn: "AL AHLI BANK OF KUWAIT - EGYPT",
+    classification: "بنك"
+  },
+  "CB25010001": {
+    bankNameAr: "مصرف أبوظبي الإسلامي",
+    bankNameEn: "ABU DHABI ISLAMIC BANK",
+    classification: "بنك"
+  },
+  "CB26000001": {
+    bankNameAr: "بنك البركة مصر",
+    bankNameEn: "AL BARAKA BANK EGYPT",
+    classification: "بنك"
+  },
+  "CB27000001": {
+    bankNameAr: "بنك الكويت الوطني",
+    bankNameEn: "NATIONAL BANK OF KUWAIT",
+    classification: "بنك"
+  },
+  "CB30000001": {
+    bankNameAr: "بنك أبوظبي التجاري - مصر",
+    bankNameEn: "ABU DHABI COMMERCIAL BANK - EGYPT",
+    classification: "بنك"
+  },
+  "CB32000001": {
+    bankNameAr: "البنك المصري الخليجي",
+    bankNameEn: "EGYPTIAN GULF BANK",
+    classification: "بنك"
+  },
+  "CB33000001": {
+    bankNameAr: "بنك إتش إس بي سي مصر",
+    bankNameEn: "HSBC BANK EGYPT",
+    classification: "بنك"
+  },
+  "CB34000001": {
+    bankNameAr: "بنك العمال المصري",
+    bankNameEn: "EGYPTIAN WORKERS BANK",
+    classification: "بنك"
+  },
+  "CC00010001": {
+    bankNameAr: "بريميوم إنترناشيونال",
+    bankNameEn: "PREMIUM INTERNATIONAL",
+    classification: "خدمات مالية"
+  },
+  "CC96010001": {
+    bankNameAr: "شركة أميكس مصر (أمريكان إكسبريس)",
+    bankNameEn: "AMEX EGYPT COMPANY",
+    classification: "خدمات مالية"
+  },
+  "FS00010001": {
+    bankNameAr: "إيجيبت فاكتورز",
+    bankNameEn: "EGYPT FACTORS",
+    classification: "تخصيم"
+  },
+  "FS00020001": {
+    bankNameAr: "كاتاليست بارتنرز",
+    bankNameEn: "CATALYST PARTNERS",
+    classification: "تخصيم / خدمات مالية"
+  },
+  "FS00040001": {
+    bankNameAr: "شركة القاهرة للتخصيم",
+    bankNameEn: "CAIRO FACTORS COMPANY",
+    classification: "تخصيم"
+  },
+  "FS00120001": {
+    bankNameAr: "كونتكت للتخصيم",
+    bankNameEn: "CONTACT FACTORING",
+    classification: "تخصيم"
+  },
+  "FS00130001": {
+    bankNameAr: "شركة ضمان مخاطر الائتمان",
+    bankNameEn: "CREDIT GUARANTEE COMPANY (CGC EGYPT)",
+    classification: "ضمان ائتمان"
+  },
+  "IB41000001": {
+    bankNameAr: "التجاري وفا بنك",
+    bankNameEn: "ATTIJARIWAFA BANK",
+    classification: "بنك"
+  },
+  "IB42000001": {
+    bankNameAr: "ميد بنك",
+    bankNameEn: "MID BANK",
+    classification: "بنك"
+  },
+  "IB43000001": {
+    bankNameAr: "بنك الشركة المصرفية العربية الدولية",
+    bankNameEn: "SOCIETE ARABE INTERNATIONALE DE BANQUE",
+    classification: "بنك"
+  },
+  "IB44000001": {
+    bankNameAr: "بنك كريدي أجريكول مصر",
+    bankNameEn: "CREDIT AGRICOLE EGYPT",
+    classification: "بنك"
+  },
+  "IB45000001": {
+    bankNameAr: "بنك قطر الوطني الأهلي",
+    bankNameEn: "QNB AL AHLI",
+    classification: "بنك"
+  },
+  "IB46000001": {
+    bankNameAr: "بنك الاستثمار العربي",
+    bankNameEn: "ARAB INVESTMENT BANK",
+    classification: "بنك"
+  },
+  "IB47000001": {
+    bankNameAr: "بنك التعمير والإسكان",
+    bankNameEn: "HOUSING AND DEVELOPMENT BANK",
+    classification: "بنك"
+  },
+  "IB49000001": {
+    bankNameAr: "المؤسسة العربية المصرفية - مصر (بنك ABC)",
+    bankNameEn: "ARAB BANKING CORPORATION - EGYPT",
+    classification: "بنك"
+  },
+  "IB50000001": {
+    bankNameAr: "البنك المصري لتنمية الصادرات",
+    bankNameEn: "EXPORT DEVELOPMENT BANK OF EGYPT",
+    classification: "بنك"
+  },
+  "IB54000001": {
+    bankNameAr: "البنك العربي الأفريقي الدولي",
+    bankNameEn: "ARAB AFRICAN INTERNATIONAL BANK",
+    classification: "بنك"
+  },
+  "LF98500001": {
+    bankNameAr: "إنكوليس للتأجير التمويلي",
+    bankNameEn: "INCOLEASE",
+    classification: "تأجير تمويلي"
+  },
+  "LF98520001": {
+    bankNameAr: "الشركة المصرية للتأجير التمويلي (كوربليس)",
+    bankNameEn: "CORPORATE LEASING COMPANY EGYPT",
+    classification: "تأجير تمويلي"
+  },
+  "LF98530001": {
+    bankNameAr: "سما فاينانس ش.م.م",
+    bankNameEn: "SAMA FINANCE SAE",
+    classification: "تأجير تمويلي"
+  },
+  "LF98540001": {
+    bankNameAr: "التوفيق للتأجير التمويلي",
+    bankNameEn: "AL TAWFEEK",
+    classification: "تأجير تمويلي"
+  },
+  "LF98560001": {
+    bankNameAr: "تكنوليس للتأجير التمويلي",
+    bankNameEn: "TECHNOLEASE",
+    classification: "تأجير تمويلي"
+  },
+  "LF98590001": {
+    bankNameAr: "جي بي ليس للتأجير التمويلي",
+    bankNameEn: "GB LEASE",
+    classification: "تأجير تمويلي"
+  },
+  "LF98600001": {
+    bankNameAr: "ترو فاينانس للتأجير التمويلي (تروليس)",
+    bankNameEn: "TRUE FINANCE LEASING - TRUELEASE",
+    classification: "تأجير تمويلي"
+  },
+  "LF98610001": {
+    bankNameAr: "بنك قطر الوطني الأهلي للتأجير التمويلي",
+    bankNameEn: "QNB AL AHLI FOR LEASING FINANCE",
+    classification: "تأجير تمويلي"
+  },
+  "LF98680001": {
+    bankNameAr: "كونتكت للتأجير التمويلي ش.م.م",
+    bankNameEn: "CONTACT LEASING S.A.E",
+    classification: "تأجير تمويلي"
+  },
+  "LF98700001": {
+    bankNameAr: "المجموعة المالية هيرميس للحلول التمويلية",
+    bankNameEn: "EFG HERMES CORP SOLUTIONS",
+    classification: "تأجير تمويلي"
+  },
+  "LF98720001": {
+    bankNameAr: "جلوبال ليس للتأجير التمويلي",
+    bankNameEn: "GLOBAL LEASE",
+    classification: "تأجير تمويلي"
+  },
+  "LF98780001": {
+    bankNameAr: "إيجي ليس للتأجير التمويلي",
+    bankNameEn: "EGY LEASE",
+    classification: "تأجير تمويلي"
+  },
+  "LF98800001": {
+    bankNameAr: "شركة القاهرة للتأجير التمويلي",
+    bankNameEn: "CAIRO LEASING CORPORATION",
+    classification: "تأجير تمويلي"
+  },
+  "LF98900001": {
+    bankNameAr: "شركة بلتون للتأجير التمويلي",
+    bankNameEn: "BELTONE LEASING COMPANY",
+    classification: "تأجير تمويلي"
+  },
+  "MF00010001": {
+    bankNameAr: "تنمية لخدمات المشاريع متناهية الصغر",
+    bankNameEn: "TANMEYAH MICRO ENTERPRISE SERVICE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020000": {
+    bankNameAr: "الاتحاد المصري للتمويل متناهي الصغر",
+    bankNameEn: "EGYPTIAN MICROFINANCE FEDERATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020001": {
+    bankNameAr: "جمعية رجال أعمال إسكندرية - مشروع تنمية المنشآت الصغيرة",
+    bankNameEn: "ALEXANDRIA BUSINESS ASSOCIATION - SMALL MICRO ENTERPRISE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020003": {
+    bankNameAr: "جمعية الدقهلية لتنمية المجتمع",
+    bankNameEn: "DAKAHLIYA ASSOCIATION FOR COMMUNITY DEVELOPMENT",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020008": {
+    bankNameAr: "الشركة الأولى للتمويل متناهي الصغر",
+    bankNameEn: "FIRST COMPANY FOR MICRO FINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020010": {
+    bankNameAr: "فاروس مايكرو",
+    bankNameEn: "FAROUS MICRO",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020011": {
+    bankNameAr: "شركة كاش للتمويل متناهي الصغر",
+    bankNameEn: "CASH MICROFINANCE COMPANY",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020012": {
+    bankNameAr: "شركة فاروس للتمويل متناهي الصغر",
+    bankNameEn: "FAROUS MICRO FINANCE CO.",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020013": {
+    bankNameAr: "شركة أور للتمويل متناهي الصغر",
+    bankNameEn: "AUR MICROFINANCE COMPANY",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00020015": {
+    bankNameAr: "فينبي",
+    bankNameEn: "FINBI",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021002": {
+    bankNameAr: "جمعية التنمية الاقتصادية والاجتماعية للمعاش المبكر",
+    bankNameEn: "ECONOMIC AND SOCIAL DEVELOPMENT FOR EARLY RETIREMENT",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021004": {
+    bankNameAr: "جمعية شروق للعاملين",
+    bankNameEn: "PERSONNEL SHEROK ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021005": {
+    bankNameAr: "جمعية سيدات الأعمال للصناعات الصغيرة والمتوسطة",
+    bankNameEn: "BUSINESS WOMEN ASSOCIATION FOR SMALL AND MEDIUM INDUSTRIES",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021006": {
+    bankNameAr: "مؤسسة ليد للتنمية (تطوير)",
+    bankNameEn: "LEAD DEVELOPMENT FOUNDATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021007": {
+    bankNameAr: "الجمعية المصرية للتمويل",
+    bankNameEn: "EGYPTIAN ASSOCIATION FOR FINANCING",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021008": {
+    bankNameAr: "جمعية تنمية المجتمع المحلي - الكوم",
+    bankNameEn: "LOCAL SOCIETY DEVELOPMENT ASSOCIATION - ELKOM",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021014": {
+    bankNameAr: "جمعية تنمية المجتمع المحلي - الجيزة",
+    bankNameEn: "LOCAL SOCIETY DEVELOPMENT ASSOCIATION - GIZA",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021020": {
+    bankNameAr: "قرية الأمل - القاهرة",
+    bankNameEn: "HOPE VILLAGE - CAIRO",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021021": {
+    bankNameAr: "الجمعية المصرية (I THE EGYPTIAN)",
+    bankNameEn: "I THE EGYPTIAN",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021026": {
+    bankNameAr: "جمعية سيدات أعمال المستقبل",
+    bankNameEn: "FUTURE BUSINESS WOMAN ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021027": {
+    bankNameAr: "جمعية رجال أعمال أسوان",
+    bankNameEn: "ASWAN BUSINESS MEN ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021028": {
+    bankNameAr: "جمعية شباب مصر للتنمية",
+    bankNameEn: "EGYPT'S YOUTH FOR DEVELOPMENT ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021029": {
+    bankNameAr: "جمعية مستثمري ورجال أعمال الشرقية",
+    bankNameEn: "SHARKEYA BUSINESSMEN ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021030": {
+    bankNameAr: "المركز الإقليمي لتنمية المشروعات",
+    bankNameEn: "REGIONAL ENTERPRISES DEVELOPMENT CENTER",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021032": {
+    bankNameAr: "جمعية رجال أعمال أسيوط",
+    bankNameEn: "ASSUIT BUSINESSMEN ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021040": {
+    bankNameAr: "الجمعية المصرية للتنمية الشاملة",
+    bankNameEn: "EGYPTIAN ASSOCIATION FOR COMPREHENSIVE DEVELOPMENT",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021043": {
+    bankNameAr: "جمعية تنمية المجتمع المحلي بنجع العرقي - قنا",
+    bankNameEn: "LOCAL SOCIETY DEVELOPMENT IN NAGAA ELARKY - QENA",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021051": {
+    bankNameAr: "جمعية فكرة للتنمية والباعة الجائلين",
+    bankNameEn: "FEKRAH ASSOCIATION FOR DEVELOPMENT AND STREET SELLERS",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021054": {
+    bankNameAr: "جمعية سان مارك - المنيا",
+    bankNameEn: "SAN MARC ASSOCIATION - MENIA",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021062": {
+    bankNameAr: "جمعية تنمية البيئة والمجتمع",
+    bankNameEn: "ASSOCIATION OF ENVIRONMENT DEVELOPMENT AND SOCIETY",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021064": {
+    bankNameAr: "جمعية دندرة لتنمية المشروعات الصغيرة",
+    bankNameEn: "DANDA ASSOCIATION - DEVELOPMENT SMALL PROJECTS",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021065": {
+    bankNameAr: "جمعية تنمية المجتمع المحلي بفرشوط",
+    bankNameEn: "LOCAL SOCIETY DEVELOPMENT IN FARSHOOT",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021070": {
+    bankNameAr: "الجمعية المصرية للتدريب وتنمية المشروعات الصغيرة",
+    bankNameEn: "EGYPTIAN ASSOCIATION FOR TRAINING AND DEVELOPING SMALL ENTERPRISES",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021082": {
+    bankNameAr: "جمعية تنمية المجتمع بفيديمين - الفيوم",
+    bankNameEn: "SOCIETY DEVELOPMENT ASSOCIATION IN FEDMEN - FAYOUM",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021090": {
+    bankNameAr: "مصر المحروسة",
+    bankNameEn: "MASR EL-MAHROUSA",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021097": {
+    bankNameAr: "جمعية تحالف المرأة العربية - القاهرة",
+    bankNameEn: "ARABIC WOMEN ALLIANCE ASSOCIATION - CAIRO",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021114": {
+    bankNameAr: "باب رزق جميل",
+    bankNameEn: "BAB RIZQ JAMEEL",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021115": {
+    bankNameAr: "جمعية الرفاعية الخيرية - تله - المنيا",
+    bankNameEn: "ELREFAYA CHARITY ASSOCIATION - TALAH - MENIA",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021119": {
+    bankNameAr: "مؤسسة أدوات دعم المشروعات (بيست)",
+    bankNameEn: "BUSINESS ENTERPRISE SUPPORT TOOLS - BEST FOUNDATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021122": {
+    bankNameAr: "جمعية السلام - قوص - قنا",
+    bankNameEn: "ELSALAM ASSOCIATION - QOUS - QENA",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021124": {
+    bankNameAr: "رؤية جديدة للتنمية - المنيا",
+    bankNameEn: "NEW VISION FOR DEVELOPMENT - MENIA",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021132": {
+    bankNameAr: "جمعية نادي رجال الأعمال",
+    bankNameEn: "BUSINESSMEN CLUB ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021147": {
+    bankNameAr: "رعاية المستقبل",
+    bankNameEn: "FUTURE CARE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021150": {
+    bankNameAr: "الجمعية المصرية لتنظيم الأسرة - أسوان",
+    bankNameEn: "EGYPTIAN FAMILY PLANNING ASSOCIATION - ASWAN",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021173": {
+    bankNameAr: "جمعية المستقبل للتمويل متناهي الصغر",
+    bankNameEn: "FUTURE ASSOCIATION FOR MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021174": {
+    bankNameAr: "المؤسسة الأولى للتمويل متناهي الصغر",
+    bankNameEn: "FIRST MICROFINANCE FOUNDATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021178": {
+    bankNameAr: "جمعية تنمية المجتمع - الأقالتة - الأقصر",
+    bankNameEn: "SOCIETY DEVELOPMENT ASSOCIATION - AKALTA - LUXOR",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021206": {
+    bankNameAr: "مؤسسة تنمية الأسرة بأسيوط",
+    bankNameEn: "ASSUIT FAMILY DEVELOPMENT FOUNDATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021213": {
+    bankNameAr: "منظمة سبتاس لتنمية المجتمع",
+    bankNameEn: "SBTAS SOCIETY DEVELOPMENT ORGANIZATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021242": {
+    bankNameAr: "جمعية تنمية المجتمع - المشروعات الصغيرة ومتناهية الصغر",
+    bankNameEn: "COMMUNITY DEVELOPMENT ASSOCIATION - SMALL MICRO ENTERPRISES",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021256": {
+    bankNameAr: "جمعية سيدات أعمال أسيوط",
+    bankNameEn: "ASSUIT BUSINESS WOMEN ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021262": {
+    bankNameAr: "شباب مصر لتنمية المجتمع - الفيوم",
+    bankNameEn: "EGYPT YOUTH FOR SOCIETY DEVELOPMENT - FAYOUM",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021359": {
+    bankNameAr: "جمعية تنمية قدرات المجتمع والبيئة",
+    bankNameEn: "COMMUNITY CAPABILITY DEVELOPMENT AND ENVIRONMENTAL ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021424": {
+    bankNameAr: "جمعية الطفولة والتنمية بأسيوط",
+    bankNameEn: "ASSUIT CHILDHOOD AND DEVELOPMENT ASSOCIATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021425": {
+    bankNameAr: "تنمية الأسرة والمجتمع المحلي بالفيوم",
+    bankNameEn: "FAMILY AND LOCAL SOCIETY DEVELOPMENT IN FAYOUM",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021443": {
+    bankNameAr: "جمعية مفتاح الحياة - الأقصر",
+    bankNameEn: "LIFE KEY ASSOCIATION - LUXOR",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021543": {
+    bankNameAr: "جمعية تنمية المجتمع بالعجميين - الفيوم",
+    bankNameEn: "SOCIETY DEVELOPMENT ASSOCIATION IN AGMEEN - FAYOUM",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021621": {
+    bankNameAr: "جمعية رعاية الصيادين وعمال الصيد - أسوان",
+    bankNameEn: "FISHERMEN AND HUNTING WORKERS CARE ASSOCIATION - ASWAN",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021697": {
+    bankNameAr: "مؤسسة منة للتنمية",
+    bankNameEn: "MENNA DEVELOPMENT CORPORATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021755": {
+    bankNameAr: "جمعية وادي النيل للتنمية - طهطا - سوهاج",
+    bankNameEn: "WADI EL NILE FOR DEVELOPMENT ASSOCIATION - TAHTA - SOHAG",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021864": {
+    bankNameAr: "خالد أبو الله للتنمية الاجتماعية - القاهرة",
+    bankNameEn: "KHALED ABOALLAH FOR SOCIAL DEVELOPMENT - CAIRO",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00021931": {
+    bankNameAr: "جمعية أمان للتنمية البشرية",
+    bankNameEn: "AMAN ASSOCIATION FOR HUMAN DEVELOPMENT",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00030001": {
+    bankNameAr: "شركة ريفي لخدمات المشاريع متناهية الصغر",
+    bankNameEn: "MICROFINANCE ENTERPRISE SERVICES COMPANY 'REEFY'",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00040001": {
+    bankNameAr: "تساهيل للتمويل متناهي الصغر",
+    bankNameEn: "TASAHEEL MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00050001": {
+    bankNameAr: "مؤسسة التضامن للتمويل الأصغر",
+    bankNameEn: "ALTADAMUN MICROFINANCE INSTITUTION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00060001": {
+    bankNameAr: "جمعية تنمية المشروعات الصغيرة ببورسعيد",
+    bankNameEn: "SMALL ENTERPRISES DEVELOPMENT ASSOCIATION OF PORT SAID",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00070001": {
+    bankNameAr: "الهيئة القبطية الإنجيلية للخدمات الاجتماعية",
+    bankNameEn: "COPTIC EVANGELICAL ORGANIZATION FOR SOCIAL SERVICES",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00090001": {
+    bankNameAr: "مؤسسة مصر الخير",
+    bankNameEn: "MISR EL-KHEIR FOUNDATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00100001": {
+    bankNameAr: "سندة للتمويل متناهي الصغر",
+    bankNameEn: "SANDAH MICRO FINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00110001": {
+    bankNameAr: "أمان للتمويل متناهي الصغر",
+    bankNameEn: "AMAN MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00120001": {
+    bankNameAr: "تمويلي للمشروعات متناهية الصغر",
+    bankNameEn: "TAMWEELY MICRO FINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00121007": {
+    bankNameAr: "إرادة للتمويل متناهي الصغر",
+    bankNameEn: "ERADA MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00130001": {
+    bankNameAr: "فوري للتمويل متناهي الصغر",
+    bankNameEn: "FAWRY MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00131007": {
+    bankNameAr: "إنجاز للتمويل متناهي الصغر",
+    bankNameEn: "INGAZ MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00140001": {
+    bankNameAr: "بساطة للتمويل متناهي الصغر",
+    bankNameEn: "BASATA MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00150001": {
+    bankNameAr: "المؤسسة العامة للتكافل الاجتماعي",
+    bankNameEn: "GENERAL FOUNDATION FOR SOCIAL SOLIDARITY",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00160001": {
+    bankNameAr: "المؤسسة المصرية لتنمية المشروعات الصغيرة",
+    bankNameEn: "EGYPTIAN SMALL ENTERPRISE DEVELOPMENT FOUNDATION",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00180001": {
+    bankNameAr: "الأهلي كابيتال للتمويل متناهي الصغر - تمكين",
+    bankNameEn: "AL AHLY CAPITAL FOR MICROFINANCE - TAMKEEN",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00190001": {
+    bankNameAr: "بدايتي للتمويل متناهي الصغر",
+    bankNameEn: "BEDAYTI - MICROFINANCE COMPANY",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00200001": {
+    bankNameAr: "إيزي كريديت للتمويل متناهي الصغر",
+    bankNameEn: "EASY CREDIT FOR MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00210001": {
+    bankNameAr: "المصرية للتمويل متناهي الصغر - مكسب",
+    bankNameEn: "EGYPTIAN FOR MICROFINANCE - MAKSAB",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00220001": {
+    bankNameAr: "ثقة للتمويل متناهي الصغر",
+    bankNameEn: "THIQA MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MF00230001": {
+    bankNameAr: "شاري للتمويل متناهي الصغر",
+    bankNameEn: "SHARI MICROFINANCE",
+    classification: "تمويل متناهي الصغر / جمعية"
+  },
+  "MG98010001": {
+    bankNameAr: "الشركة المصرية للتمويل العقاري",
+    bankNameEn: "EGYPTIAN HOUSING FINANCE COMPANY",
+    classification: "تمويل عقاري"
+  },
+  "MG98060001": {
+    bankNameAr: "الشركة العربية الأفريقية الدولية للتمويل العقاري",
+    bankNameEn: "ARAB AFRICAN INTERNATIONAL MORTGAGE FINANCE",
+    classification: "تمويل عقاري"
+  },
+  "MG98120001": {
+    bankNameAr: "كونتكت للتمويل العقاري",
+    bankNameEn: "CONTACT MORTGAGE FINANCE",
+    classification: "تمويل عقاري"
+  },
+  "MG98130001": {
+    bankNameAr: "سي آي للتمويل العقاري",
+    bankNameEn: "CI MORTGAGE",
+    classification: "تمويل عقاري"
+  },
+  "NB95000001": {
+    bankNameAr: "بنك ناصر الاجتماعي",
+    bankNameEn: "NASSER SOCIAL BANK",
+    classification: "بنك"
+  },
   "PC01000001": {
-    bankNameAr: "بنك الاسكندرية", bankNameEn: "AlexBank"
+    bankNameAr: "بنك الإسكندرية",
+    bankNameEn: "BANK OF ALEXANDRIA",
+    classification: "بنك"
   },
-  "CB01280001": { bankNameAr: "المصرف المتحد", bankNameEn: "The United Bank" },
-  "CB01290001": { bankNameAr: "المصرف العربي الدولى", bankNameEn: "Arab International Bank" },
   "PC02000001": {
-    bankNameAr: "البنك الاهلى المصري", bankNameEn: "National Bank of Egypt"
+    bankNameAr: "البنك الأهلي المصري",
+    bankNameEn: "NATIONAL BANK OF EGYPT",
+    classification: "بنك"
   },
-  "PC03000001": { bankNameAr: "بنك القاهرة", bankNameEn: "Banque Du Caire" },
-  "PC04000001": { bankNameAr: "بنك مصر", bankNameEn: "Banque Misr" },
-  "CB13000001": { bankNameAr: "البنك التجارى الدولى /مصر", bankNameEn: "Commercial International Bank /Egypt" },
-  "CB14000001": { bankNameAr: "بنك بلوم مصر ش.م.م", bankNameEn: "Blom Bank Egypt S.A.E" },
-  "CB15000001": { bankNameAr: "بنك الامارات دبي الوطنى", bankNameEn: "Emarites National Bank of Dubai" },
-  "CB17000001": { bankNameAr: "بنك قناة السويس", bankNameEn: "Suiz Canal Bank" },
-  "CB19000001": { bankNameAr: "بنك عودة ش. م .م", bankNameEn: "Bank Audi S.A.E" },
-  "CB20000001": { bankNameAr: "البنك الاهلى المتحد-مصر", bankNameEn: "Ahli United Bank - Egypt" },
-  "CB23000001": { bankNameAr: "بنك فيصل الاسلامى المصري", bankNameEn: "Faisal Islamic Bank of Egypt" },
-  "CB24000001": { bankNameAr: "بنك بيريوس - مصر", bankNameEn: "Piraeus Bank- Egypt" },
-  "CB25010001": { bankNameAr: "مصرف ابوظبى الاسلامى - مصر", bankNameEn: "Abu Dhabi Islamic Bank- Egypt" },
-  "CB26000001": { bankNameAr: "بنك البركة - مصر", bankNameEn: "alBaraka Bank" },
-  "CB27000001": { bankNameAr: "بنك الكويت الوطنى - مصر", bankNameEn: "National Bank of Kwait" },
-  "CB30000001": { bankNameAr: "بنك الاتحاد الوطنى - مصر ش. م .م", bankNameEn: "Union Bank Bank" },
-  "CB32000001": { bankNameAr: "البنك المصري الخليجي", bankNameEn: "Egypt Gulf Bank" },
-  "CB33000001": { bankNameAr: "بنك إتش إس بي سي- مصر", bankNameEn: "HSBC Bank" },
-  "CB36000001": { bankNameAr: "ذي بانك اوف نوفاسكوشيا", bankNameEn: "The Bank of Nova Scotia" },
-  "CB37000001": { bankNameAr: "البنك الوطنى العمانى ش. م.ع .ع", bankNameEn: "National Bank of Oman" },
-  "FB38000001": { bankNameAr: "بنك المشرق ش.م.ع", bankNameEn: "Mashreq Bank" },
-  "FB39000001": { bankNameAr: "البنك العربي ش.م.ع", bankNameEn: "Arab Bank" },
-  "IB41000001": { bankNameAr: "بنك باركليز-مصر ش.م.م", bankNameEn: "Barclays Bank" },
-  "IB42000001": { bankNameAr: "بنك مصر ايران للتنمية", bankNameEn: "Misr Iran Development Bank" },
-  "IB43000001": { bankNameAr: "بنك الشركة المصرفية العربية الدولية", bankNameEn: "SAIBank" },
-  "IB44000001": { bankNameAr: "بنك كريدي اجريكول-مصر", bankNameEn: "Banque Credit Agricole-Egypt" },
-  "IB45000001": { bankNameAr: "بنك قطر الوطنى الاهلى ش. م .م", bankNameEn: "QNB AlAhli" },
-  "IB46000001": { bankNameAr: "بنك الاستثمار العربي", bankNameEn: "Arab Investment Bank" },
-  "IB47000001": { bankNameAr: "بنك التعمير والاسكان", bankNameEn: "Housing &Development Bank" },
-  "IB49000001": { bankNameAr: "بنك المؤسسة العربية المصرفية ش . م .م", bankNameEn: "Arab Banking Corporation" },
-  "FB50000001": { bankNameAr: "البنك المصري لتنمية الصادرات", bankNameEn: "Export Development Bank of Egypt" },
-  "FB51000001": { bankNameAr: "بنك ابوظبى الوطنى", bankNameEn: "National Bank of Abu Dhabi" },
-  "FB53000001": { bankNameAr: "سيتى بانك ان ايه-مصر", bankNameEn: "Citi Bank N A-Egypt" },
-  "FB54000001": { bankNameAr: "البنك العربي الافريقي الدولي", bankNameEn: "Arab African international Bank" },
-  "FB56000001": { bankNameAr: "بنك كريدى سويس فرست بوسطن", bankNameEn: "Credit Suisse First Boston Bank" },
-  "FB57000001": { bankNameAr: "البنك الاهلى اليوناني", bankNameEn: "National Bank of Greece" },
-  "FB58000001": { bankNameAr: "جمال تراست بنك", bankNameEn: "Jammal Trust Bank" },
-  "FB59000001": { bankNameAr: "بنك اوف امريكا ناشيونال اسوسيشن", bankNameEn: "Bank of America National Association" },
-  "FB60000001": { bankNameAr: "لويدز بانك بي ال سي", bankNameEn: "Lloyds Bank BLC" },
-  "FB64000001": { bankNameAr: "البنك الاهلى الباكستانى", bankNameEn: "National Bank of Bakistan" },
-  "FB66000001": { bankNameAr: "بنك صادرات ايران", bankNameEn: "Export Bank of Iran" },
-  "FB69000001": { bankNameAr: "بنك الشرق الاوسط المحدود", bankNameEn: "Middle East Bank limited" },
-  "FB73000001": { bankNameAr: "مصرف الرافدين", bankNameEn: "Alrafidain Bank" },
-  "FB77000001": { bankNameAr: "البنك العقارى المصري العربي", bankNameEn: "Egyptian Arab Land Bank" },
-  "FB80000001": { bankNameAr: "بنك التنمية الصناعية والعمال المصري", bankNameEn: "Industrial Development and Workers Bank" },
-  "SB82010001": { bankNameAr: "البنك الزراعى المصري", bankNameEn: "Agricultural Bank of Egypt" },
-  "SB82300001": { bankNameAr: "البنك الزراعى المصري للوجه البحري", bankNameEn: "Agricultural Bank of Egypt -Bahri" },
-  "SB82700001": { bankNameAr: "البنك الزراعى المصري للوجه القبلى", bankNameEn: "Agricultural Bank of Egypt-Qibli" },
-  "NB93000001": { bankNameAr: "الصندوق الاجتماعى للتنمية (جهاز تنمية المشروعات)", bankNameEn: "Social Fund for Development" },
-  "NB95000001": { bankNameAr: "بنك ناصر الاجتماعى", bankNameEn: "Naser Social Bank" },
-  "0096000001": { bankNameAr: "توماس كوك", bankNameEn: "Thomas Cook" },
-  "0096010001": { bankNameAr: "امريكان اكسبريس", bankNameEn: "American Express" },
-  "0097010001": { bankNameAr: "الشركة المصرية للاستعلام الائتمانى (أي سكور)", bankNameEn: "The Egyptian Credit Bureau" },
-  "0098000001": { bankNameAr: "شركة التعمير للتمويل العقاري-الاولى", bankNameEn: "Ta3mer for Housing Finance 1" },
-  "0098010001": { bankNameAr: "الشركة المصرية للتمويل العقاري", bankNameEn: "Egyptian Housing Finance" },
-  "0098020001": { bankNameAr: "تمويل للتمويل العقاري ش .م.م", bankNameEn: "Tamweel for housing finance" },
-  "0098040001": { bankNameAr: "تمويل الامارات للتمويل العقاري", bankNameEn: "Tamweel Emarites for Housing Finance" },
-  "0098050001": { bankNameAr: "التيسير للتمويل العقاري", bankNameEn: "Tyseer Mortgage" },
-  "0098060001": { bankNameAr: "العربي الافريقى الدولي للتمويل العقاري", bankNameEn: "Arab African International Motgage Finance" },
-  "0098070001": { bankNameAr: "شركة سكن للتمويل العقاري ش.م.م", bankNameEn: "Sakan Housing finance" },
-  "0098080001": { bankNameAr: "شركة الاهلى المتحد للتمويل ش.م.م", bankNameEn: "AlAhli United for Finance" },
-  "0098090001": { bankNameAr: "شركة الاهلى للتمويل العقاري", bankNameEn: "Al Ahly Motgage Finance" },
-  "0098100001": { bankNameAr: "شركة المصريين للتمويل العقاري", bankNameEn: "Al Masreen Motgage Finance" },
-  "0098500001": { bankNameAr: "الشركة الدولية للتاجير التمويلى-انكوليس", bankNameEn: "International company for Leasing" },
-  "0098510001": { bankNameAr: "شركة توشكا للتاجير التمويلى", bankNameEn: "Tushka Company for Leasing" },
-  "0098520001": { bankNameAr: "شركة كوربليس للتاجير التمويلي", bankNameEn: "CorpLease" },
-  "0098530001": { bankNameAr: "شركة اوريكس مصر للتاجير التمويلى", bankNameEn: "Orix Egypt Leasing" },
-  "0098540001": { bankNameAr: "شركة التوفيق للتاجير التمويلي ش.م.م", bankNameEn: "AlTawfik Lease" },
-  "0098550001": { bankNameAr: "شركة املاك للتمويل والاستثمار العقاري", bankNameEn: "Amlak for finance and housing investmet" },
-  "0098560001": { bankNameAr: "شركة تكنوليس للتاجير التمويلي", bankNameEn: "Techno-Lease" },
-  "0098570001": { bankNameAr: "شركة بيريوس مصر للتاجير التمويلي", bankNameEn: "Biraeus Egypt Lease" },
-  "0098580001": { bankNameAr: "شركة المصريين للانماء الاقتصادي", bankNameEn: "Al masreen for Economic Development" },
-  "0098590001": { bankNameAr: "شركة جي بي للتاجير التمويلي", bankNameEn: "Gabbour Lease" },
-  "0098600001": { bankNameAr: "شركة الامارات دبي الوطنى للتاجير التمويلي", bankNameEn: "Emirates NBD lease" },
-  "0098610001": { bankNameAr: "شركة كيو ان بي الاهلى ايجبت للتاجير التمويلي ش.م.م", bankNameEn: "QNB Al Ahly Egypt Lease" },
-  "0098620001": { bankNameAr: "شركة اديليس للتاجير التمويلى", bankNameEn: "Abu Dhabi Islamic Lease" },
-  "0098630001": { bankNameAr: "شركة تمويل للتاجير التمويلي", bankNameEn: "Tamweel Lease" },
-  "0098640001": { bankNameAr: "جراند انفسمنت للتاجير التمويلي", bankNameEn: "Grand Investment Lease" },
-  "0098650001": { bankNameAr: "شركة ايماك للتمويل التاجيري", bankNameEn: "Imak Lease" },
-  "0098660001": { bankNameAr: "شركة بيت الخبرة للتنمية الاقتصادية", bankNameEn: "Bait El Khebra for Economic Development" },
-  "0098670001": { bankNameAr: "شركة الاهلى للتاجير التمويلي", bankNameEn: "Al Ahly Leasing Company" },
-  "0098680001": { bankNameAr: "ش التوفيق لتاجير الاصول لشركات صغيرة ومتوسطة ايه تي فاينانس", bankNameEn: "AT Finance" },
-  "0098690001": { bankNameAr: "شركة النيل للتاجير التمويلي", bankNameEn: "Nile Company Lease" },
-  "0098700001": { bankNameAr: "شركة المجموعة المالية هيرمس للتاجير التمويلي", bankNameEn: "Hermes Leasing Company" },
-  "0098710001": { bankNameAr: "شركة العربي الافريقي الدولى للتاجير التمويلي", bankNameEn: "Arab African International Leasing" },
-  "MF00010001": { bankNameAr: "تنمية", bankNameEn: "Tanmya" },
-  "MF00021114": { bankNameAr: "باب رزق", bankNameEn: "Bab Rizk" },
-  "MF00040001": { bankNameAr: "تساهيل", bankNameEn: "Tasaheel" },
-  "MF00021559": { bankNameAr: "جمعية تنمية القدرات بقنا", bankNameEn: "Tanmya Kodrat Asoc.Qena" },
-  "MF00020000": { bankNameAr: "جمعية تنمية المجتمع بسوهاج", bankNameEn: "Tanmya Mogtama Asoc.Sohag" },
-  "MF00020006": { bankNameAr: "ليبد", bankNameEn: "Lebid" },
-  "MF0010001": { bankNameAr: "سندة", bankNameEn: "Sanda" },
-  "MF00020003": { bankNameAr: "جمعية رجال اعمال اسكندرية", bankNameEn: "Alexandria Businessmen Asoc." },
-  "MF00020001": { bankNameAr: "جمعية رجال اعمال الدقهلية", bankNameEn: "Dakahlya Businessmen Asoc." },
-  "MF00120001": { bankNameAr: "تمويلي", bankNameEn: "Tamweely" },
-  "MF00030001": { bankNameAr: "ريفي", bankNameEn: "Reefy" },
-  "MF00021245": { bankNameAr: "مبادرة", bankNameEn: "Mobadra" },
-  "MF00060001": { bankNameAr: "جمعية بورسعيد", bankNameEn: "PortSaid Asoc." },
-  "MF00021206": { bankNameAr: "مؤسسة تنمية الاسرة المصرية", bankNameEn: "Egyptian Family Development Org." },
-  "MF00021174": { bankNameAr: "المؤسسة الاولى للتمويل متناهي الصغر", bankNameEn: "First Organization SME" },
-  "MF00110001": { bankNameAr: "امان", bankNameEn: "Aman" },
-  "MF00021132": { bankNameAr: "جمعية رجال العمال بنجع حمادي", bankNameEn: "Nag'a Hammadi Businessmen Asoc." },
-  "MF00040001": { bankNameAr: "تساهيل", bankNameEn: "Tasaheel" },
-  "MF00050001": { bankNameAr: "تضامن", bankNameEn: "Tadamon" },
-  "MF00021029": { bankNameAr: "جمعية رجال اعمال الشرقية", bankNameEn: "Sharkya Businessmen Asoc." },
-  "NB00010001": { bankNameAr: "الصندوق الاجتماعي للتنمية", bankNameEn: "SFD" },
-  "CB20000001": { bankNameAr: "البنك الأهلى المتحد", bankNameEn: ""},
-  "CB27000001": { bankNameAr: "بنك الكويت الوطني", bankNameEn: ""},
-  "CB30000001": { bankNameAr: "بنك الإتحاد الوطني - مصر", bankNameEn: ""},
-  "CB19000001": { bankNameAr: "بنك عودة", bankNameEn: ""},
-  "CB14000001": { bankNameAr: "بنك بلوم - مصر", bankNameEn: ""},
-  "CB15000001": { bankNameAr: "بنك الامارات دبي الوطني", bankNameEn: ""},
-  "CB13000001": { bankNameAr: "البنك التجاري الدولي / مصر", bankNameEn: ""},
-  "CB32000001": { bankNameAr: "البنك المصري الخليجي", bankNameEn: ""},
-  "CB26000001": { bankNameAr: "بنك البركة", bankNameEn: ""},
-  "CB23000001": { bankNameAr: "بنك فيصل الإسلامي المصري", bankNameEn: ""},
-  "CB33000001": { bankNameAr: "بنك اتش اس بی سی مصر", bankNameEn: ""},
-  "CB25000001": { bankNameAr: "مصرف ابوظبى الاسلامي", bankNameEn: ""},
-  "CB24000001": { bankNameAr: "البنك الأهلى الكويتي - مصر", bankNameEn: ""},
-  "CB17000001": { bankNameAr: "بنك قناة السويس", bankNameEn: ""},
-  "CB01280001": { bankNameAr: "المصرف المتحد", bankNameEn: ""},
-  "CB25010001": { bankNameAr: "الاتحاد المصرى للتمويل متناهى الصغر", bankNameEn: ""},
-  "FB39000001": { bankNameAr: "البنك العربي", bankNameEn: ""},
-  "FB53000001": { bankNameAr: "سيتي بنك ان ايه / مصر", bankNameEn: ""},
-  "FB57000001": { bankNameAr: "البنك الأهلى اليوناني", bankNameEn: ""},
-  "FB38000001": { bankNameAr: "بنك المشرق", bankNameEn: ""},
-  "FB51000001": { bankNameAr: "بنك أبو ظبي الأول", bankNameEn: ""},
-  "FB36000001": { bankNameAr: "ذي بنك اوف نوفا سكوشيا", bankNameEn: ""},
-  "IB54000001": { bankNameAr: "البنك العربي الافريقي الدولي", bankNameEn: ""},
-  "IB49000001": { bankNameAr: "بنك المؤسسة العربية المصرفية - مصر", bankNameEn: ""},
-  "IB46000001": { bankNameAr: "بنك الاستثمار العربي - المصرف الاتحادي العربي للتنمية والاستثمار", bankNameEn: ""},
-  "IB41000001": { bankNameAr: "التجاري وفا بنك إيجيبت", bankNameEn: ""},
-  "IB44000001": { bankNameAr: "بنك كريدي أجريكول - مصر", bankNameEn: ""},
-  "IB47000001": { bankNameAr: "بنك التعمير والاسكان", bankNameEn: ""},
-  "IB42000001": { bankNameAr: "بنك مصر ايران للتنمية", bankNameEn: ""},
-  "IB45000001": { bankNameAr: "بنك قطر الوطنى الأهلى", bankNameEn: ""},
-  "IB43000001": { bankNameAr: "بنك الشركة المصرفية العربية الدولية", bankNameEn: ""},
-  "IB50000001": { bankNameAr: "البنك المصري لتنمية الصادرات", bankNameEn: ""},
-  "NB94000001": { bankNameAr: "المصرف العربي الدولي", bankNameEn: ""},
-  "NB95000001": { bankNameAr: "بنك ناصر الاجتماعي", bankNameEn: ""},
-  "NB00010001": { bankNameAr: "جهاز تنمية المشروعات المتوسطة والصغيرة ومتناهية الصغر", bankNameEn: ""},
-  "PC01000001": { bankNameAr: "بنك الاسكندرية", bankNameEn: ""},
-  "PC03000001": { bankNameAr: "بنك القاهرة", bankNameEn: ""},
-  "PC04000001": { bankNameAr: "بنك مصر", bankNameEn: ""},
-  "PC02000001": { bankNameAr: "البنك الاهلى المصري", bankNameEn: ""},
-  "SB82010001": { bankNameAr: "البنك الزراعي المصري", bankNameEn: ""},
-  "SB77000001": { bankNameAr: "البنك العقاري المصري العربي", bankNameEn: ""},
-  "SB80000001": { bankNameAr: "بنك التنمية الصناعية المصري", bankNameEn: ""},
-  "RA00990001": { bankNameAr: "البنك المركزي المصري", bankNameEn: ""},
-  "MG98000001": { bankNameAr: "التعمير للتمويل العقاري (الأولى)", bankNameEn: ""},
-  "MG98010001": { bankNameAr: "المصرية للتمويل العقاري", bankNameEn: ""},
-  "MG98020001": { bankNameAr: "تمويل للتمويل العقاري", bankNameEn: ""},
-  "MG98020001": { bankNameAr: "تمويل للتمويل العقاري", bankNameEn: ""},
-  "MG98060001": { bankNameAr: "شركة العربي الأفريقى الدولى للتمويل العقاري", bankNameEn: ""},
-  "MG98050001": { bankNameAr: "التيسير للتمويل العقاري", bankNameEn: ""},
-  "MG98070001": { bankNameAr: "سكن للتمويل العقاري", bankNameEn: ""},
-  "MG98080001": { bankNameAr: "الأهلى المتحد للتمويل العقاري", bankNameEn: ""},
-  "MG98090001": { bankNameAr: "الأهلى للتمويل العقاري", bankNameEn: ""},
-  "MG98100001": { bankNameAr: "شركة المصرين للتمويل العقاري", bankNameEn: ""},
-  "MG98120001": { bankNameAr: "شركة كونتاكت للتمويل العقاري", bankNameEn: ""},
-  "LF98500001": { bankNameAr: "الشركة الدولية للتأجير التمويلي - إنكوليز", bankNameEn: ""},
-  "LF98550001": { bankNameAr: "شركة أملاك للتمويل مصر", bankNameEn: ""},
-  "LF98540001": { bankNameAr: "شركة التوفيق للتأجير التمويلي", bankNameEn: ""},
-  "LF98530001": { bankNameAr: "شركة أوريكس مصر للتأجير التمويلي", bankNameEn: ""},
-  "LF98520001": { bankNameAr: "شركة كوربليس للتأجير التمويلي", bankNameEn: ""},
-  "LF98590001": { bankNameAr: "شركة جي بي للتأجير التمويلي", bankNameEn: ""},
-  "LF98620001": { bankNameAr: "شركة أديليس للتأجير التمويلي", bankNameEn: ""},
-  "LF98570001": { bankNameAr: "شركة بيريوس للتأجير التمويلي", bankNameEn: ""},
-  "LF98600001": { bankNameAr: "شركة الإمارات دبي الوطني للتأجير التمويلي", bankNameEn: ""},
-  "LF98610001": { bankNameAr: "شركة كيو أن بي الأهلي للتأجير التمويلي", bankNameEn: ""},
-  "LF98670001": { bankNameAr: "شركة الأهلى للتأجير التمويلي", bankNameEn: ""},
-  "LF98680001": { bankNameAr: "شركة بلس للتأجير التمويلي", bankNameEn: ""},
-  "LF98560001": { bankNameAr: "شركة تكنوليس للتأجير التمويلي", bankNameEn: ""},
-  "LF98700001": { bankNameAr: "المجموعة المالية هيرميس للتأجير التمويلي", bankNameEn: ""},
-  "LF98720001": { bankNameAr: "جلوبال ليس للتأجير التمويلي", bankNameEn: ""},
-  "LF98750001": { bankNameAr: "شركة إنماء للتأجير التمويلي", bankNameEn: ""},
-  "LF98760001": { bankNameAr: "يونايتد للتأجير التمويلي", bankNameEn: ""},
-  "LF98710001": { bankNameAr: "شركة العربي الإفريقي الدولي للتأجير التمويلي", bankNameEn: ""},
-  "LF98770001": { bankNameAr: "شركة بي إم للتأجير التمويلي", bankNameEn: ""},
-  "LF98780001": { bankNameAr: "شركة تنمية للتأجير التمويلي والاستثمار", bankNameEn: ""},
-  "LF98640001": { bankNameAr: "شركة أرتشر فاينانس للتأجير التمويلي", bankNameEn: ""},
-  "LF98740001": { bankNameAr: "التعمير للتأجير التمويلي (الأولى)", bankNameEn: ""},
-  "LF98800001": { bankNameAr: "شركة كايرو للتأجير التمويلي", bankNameEn: ""},
-  "CC96010001": { bankNameAr: "أمريكان أكسبريس", bankNameEn: ""},
-  "CC00010001": { bankNameAr: "بريميوم انترناشيونال لخدمات الائتمان", bankNameEn: ""},
-  "RC00010001": { bankNameAr: "مجموعة شركات هاي باك", bankNameEn: ""},
-  "RC00030001": { bankNameAr: "الشركة العالمية المتحدة للتجارة (المباشر ) اصبحت باسم شركه عبد اللطيف جميل للتمويل)", bankNameEn: ""},
-  "RC00040001": { bankNameAr: "الشركة الدولية للاستثمار والتجارة", bankNameEn: ""},
-  "RC00050001": { bankNameAr: "شركة يونيون جروب", bankNameEn: ""},
-  "RC00060001": { bankNameAr: "المجموعة المصرية للأنظمة الطبية", bankNameEn: ""},
-  "RC00070001": { bankNameAr: "شركة درايف", bankNameEn: ""},
-  "RC00110001": { bankNameAr: "شركة رايه", bankNameEn: ""},
-  "RC00120001": { bankNameAr: "رواج لتجارة السيارات", bankNameEn: ""},
-  "RC00130001": { bankNameAr: "شركة عفراء لتكنولوجيا الحاسبات", bankNameEn: ""},
-  "RC00140001": { bankNameAr: "شركة مصر الحجاز المركبات الفنيل ومواد التعبئة وشركة مصر الحجاز الصناعة المواسير ومنتجات البلاستيك", bankNameEn: ""},
-  "RC00150001": { bankNameAr: "الشركة المصرية لأنظمة التغليف والبلاستيك", bankNameEn: ""},
-  "RC00160001": { bankNameAr: "بروسوفت لنظم المعلومات", bankNameEn: ""},
-  "RC00190001": { bankNameAr: "شركة سكاي إيجيبت للتوريدات", bankNameEn: ""},
-  "RC00200001": { bankNameAr: "شركة غليونجى للتجارة", bankNameEn: ""},
-  "RC00210001": { bankNameAr: "شركة سكاي فاينانس لتقسيط السيارات", bankNameEn: ""},
-  "RC00220001": { bankNameAr: "جت جو لخدمات البيع بالتقسيط", bankNameEn: ""},
-  "RC00230001": { bankNameAr: "شركه كونتكت لتقسيط السيارات", bankNameEn: ""},
-  "RC00240001": { bankNameAr: "شركة كونتكت المصرية العالمية لتقسيط السيارات", bankNameEn: ""},
-  "RC00260001": { bankNameAr: "شركه ستار لتقسيط السيارات", bankNameEn: ""},
-  "RC00270001": { bankNameAr: "عز العرب كونتكت فايننشال", bankNameEn: ""},
-  "RC00280001": { bankNameAr: "شرکه با فاریان كونتكت لتجاره السيارات", bankNameEn: ""},
-  "RC00290001": { bankNameAr: "شركة فاليو لخدمات البيع بالتقسيط", bankNameEn: ""},
-  "MF00010001": { bankNameAr: "شركة تنمية لخدمات القروض متناهية الصغر", bankNameEn: ""},
-  "MF00110001": { bankNameAr: "الجمعيه المصريه لتنميه وتطوير المشروعات - لييد", bankNameEn: ""},
-  "MF00020001": { bankNameAr: "جمعية رجال أعمال إسكندرية - مشروع تنمية المنشأت الصغيرة والحرفية", bankNameEn: ""},
-  "MF00020002": { bankNameAr: "الجمعية المصرية لتنمية وتمويل المشروعات", bankNameEn: ""},
-  "MF00020003": { bankNameAr: "جمعية رجال أعمال واستثمار - فرع الدقهليه - تمى المديد", bankNameEn: ""},
-  "MF00020008": { bankNameAr: "الشركة الأولى للتمويل متناهى الصغر", bankNameEn: ""},
-  "MF00021006": { bankNameAr: "امان لتمويل المشروعات المتناهية الصغر - شبين", bankNameEn: ""},
-  "MF00021132": { bankNameAr: "جمعیه نادى رجال اعمال نجع حمادی - ابو تشت", bankNameEn: ""},
-  "MF00021147": { bankNameAr: "جمعيه المراه للتنميه الانسانيه - حياتي القليوبيه", bankNameEn: ""},
-  "MF00021245": { bankNameAr: "جمعية تنمية المجتمعات المحلية والمشروعات الصغيرة - المبادرة", bankNameEn: ""},
-  "MF00030001": { bankNameAr: "شركة ريفى لخدمات القروض متناهية الصغر", bankNameEn: ""},
-  "MF00040001": { bankNameAr: "شركة تساهيل للتمويل متناهى الصغر", bankNameEn: ""},
-  "MF00050001": { bankNameAr: "جمعية التضامن للتمويل الأصغر", bankNameEn: ""},
-  "MF00060001": { bankNameAr: "جمعية تنمية المشروعات الصغيرة ببورسعيد", bankNameEn: ""},
-  "MF00070001": { bankNameAr: "الهيئة القبطية الإنجيلية للخدمات الاجتماعية", bankNameEn: ""},
-  "MF00080001": { bankNameAr: "جمعية أبناء الفيوم بالإسكندرية", bankNameEn: ""},
-  "MF00090001": { bankNameAr: "مؤسسة مصر الخير", bankNameEn: ""},
-  "MF00100001": { bankNameAr: "شركة تمويل متناهي الصغر", bankNameEn: "First Organization SME" },
-  "MF00110001": { bankNameAr: "امان", bankNameEn: "Aman" },
-  "MF00021132": { bankNameAr: "جمعية رجال العمال بنجع حمادي", bankNameEn: "Nag'a Hammadi Businessmen Asoc." },
-  "MF00040001": { bankNameAr: "تساهيل", bankNameEn: "Tasaheel" },
-  "MF00050001": { bankNameAr: "تضامن", bankNameEn: "Tadamon" },
-  "MF00021029": { bankNameAr: "جمعية رجال اعمال الشرقية", bankNameEn: "Sharkya Businessmen Asoc." },
-  "NB00010001": { bankNameAr: "الصندوق الاجتماعي للتنمية", bankNameEn: "SFD" }
-}
+  "PC03000001": {
+    bankNameAr: "بنك القاهرة",
+    bankNameEn: "BANQUE DU CAIRE",
+    classification: "بنك"
+  },
+  "PC04000001": {
+    bankNameAr: "بنك مصر",
+    bankNameEn: "BANQUE MISR",
+    classification: "بنك"
+  },
+  "RA00990001": {
+    bankNameAr: "البنك المركزي المصري",
+    bankNameEn: "CENTRAL BANK OF EGYPT",
+    classification: "جهة رقابية"
+  },
+  "RA00990002": {
+    bankNameAr: "الهيئة العامة للرقابة المالية",
+    bankNameEn: "FINANCIAL REGULATORY AUTHORITY (FRA)",
+    classification: "جهة رقابية"
+  },
+  "RC00570001": {
+    bankNameAr: "بلنك للتمويل الاستهلاكي",
+    bankNameEn: "BLNK CONSUMER FINANCE",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00580001": {
+    bankNameAr: "حالا للتمويل الاستهلاكي",
+    bankNameEn: "HALAN CONSUMER FINANCE",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00590001": {
+    bankNameAr: "جلوبال كورب للتمويل الاستهلاكي",
+    bankNameEn: "GLOBAL CORP CONSUMER FINANCE",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00610001": {
+    bankNameAr: "مصرف أبوظبي الإسلامي للتمويل الاستهلاكي",
+    bankNameEn: "ABU DHABI ISLAMIC CONSUMER FINANCE",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00670001": {
+    bankNameAr: "درايف للتمويل والخدمات المالية غير المصرفية",
+    bankNameEn: "DRIVE FINANCE AND NON-BANKING SERVICES",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00680001": {
+    bankNameAr: "وان فاينانس لخدمات التمويل الاستهلاكي",
+    bankNameEn: "ONE FINANCE FOR CONSUMER FINANCE SERVICES",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00700001": {
+    bankNameAr: "فوري للتمويل الاستهلاكي",
+    bankNameEn: "FAWRY CONSUMER FINANCE",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00720001": {
+    bankNameAr: "أو باي ناو",
+    bankNameEn: "OPAY NOW",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00740001": {
+    bankNameAr: "ألكان فاينانس للخدمات المالية",
+    bankNameEn: "ALKAN FINANCE FOR FINANCIAL SERVICES",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00750001": {
+    bankNameAr: "كونتكت كريديتك",
+    bankNameEn: "CONTACT CREDITECH",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00780001": {
+    bankNameAr: "فاروس للتمويل الاستهلاكي (أبجد)",
+    bankNameEn: "PHAROS CONSUMER FINANCE (ABGAD)",
+    classification: "تمويل استهلاكي"
+  },
+  "RC00800001": {
+    bankNameAr: "أور للتمويل الاستهلاكي",
+    bankNameEn: "AUR CONSUMER FINANCE",
+    classification: "تمويل استهلاكي"
+  },
+  "SB77000001": {
+    bankNameAr: "البنك العقاري المصري العربي",
+    bankNameEn: "EGYPTIAN ARAB LAND BANK",
+    classification: "بنك"
+  },
+  "SB80000001": {
+    bankNameAr: "بنك التنمية الصناعية",
+    bankNameEn: "INDUSTRIAL DEVELOPMENT BANK",
+    classification: "بنك"
+  },
+  "SB82010001": {
+    bankNameAr: "البنك الزراعي المصري",
+    bankNameEn: "AGRICULTURAL BANK OF EGYPT (ABE)",
+    classification: "بنك"
+  },
+  "UC00010001": {
+    bankNameAr: "الشركة الوطنية للغاز (ناتجاس)",
+    bankNameEn: "NATIONAL GAS COMPANY (NATGAS)",
+    classification: "مرافق / خدمات"
+  },
+  "UC00020001": {
+    bankNameAr: "أورنج مصر",
+    bankNameEn: "ORANGE",
+    classification: "اتصالات"
+  },
+  "UC00030001": {
+    bankNameAr: "شركة الفيوم للغاز",
+    bankNameEn: "FAYOUM GAS COMPANY",
+    classification: "مرافق / خدمات"
+  }
+};
+
 export default codes;
