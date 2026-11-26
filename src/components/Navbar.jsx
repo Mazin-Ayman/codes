@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import ThemeToggle from "../theme/ThemeToggle";
-import logo from "../NewLogo44.jpg";
+import logo from "../logo.jpg";
 
 // /cert, /dep and /tiered stay reachable by URL but are intentionally
 // left out of the menu, matching the original app.

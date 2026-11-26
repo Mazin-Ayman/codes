@@ -35,6 +35,8 @@
   --btn-bg: #111827;
   --btn-text: #f9fafb;
   --btn-border: #f9fafb;
+  --logo-border: rgba(255, 255, 255, 0.75);
+  --logo-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 :root[data-theme="light"] {
@@ -68,6 +70,8 @@
   --btn-bg: #ffffff;
   --btn-text: #0f172a;
   --btn-border: #0f172a;
+  --logo-border: rgba(15, 23, 42, 0.1);
+  --logo-shadow: 0 1px 5px rgba(15, 23, 42, 0.1);
 }
 
 *,
@@ -166,7 +170,7 @@ a {
 }
 
 .site-nav {
-  height: 68px;
+  height: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -234,14 +238,24 @@ a {
 .site-logo {
   display: flex;
   align-items: center;
-  padding: 0.25rem 0.4rem;
-  border-radius: 10px;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0.3rem;
+  border: 1px solid var(--logo-border);
+  border-radius: 12px;
   background-color: #fff;
+  box-shadow: var(--logo-shadow);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .site-logo__img {
   display: block;
-  height: 44px;
+  width: auto;
+  max-width: 180px;
+  height: 56px;
+  border-radius: 7px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .site-menu {
@@ -549,6 +563,11 @@ a {
 @media (max-width: 600px) {
   .app-shell__body {
     padding: 1rem 0.75rem 1.5rem;
+  }
+
+  .site-logo__img {
+    height: 44px;
+    max-width: 130px;
   }
 
   .site-menu__list {

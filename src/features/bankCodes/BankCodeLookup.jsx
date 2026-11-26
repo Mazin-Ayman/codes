@@ -24,7 +24,7 @@ const BankCodeLookup = () => {
         items={[
           { id: "bank-ar", label: "اسم البنك بالعربية", value: bank?.bankNameAr },
           { id: "bank-en",  label: "اسم البنك بالإنجليزية", value: bank?.bankNameEn },
-          { id: "bank-classification", label: "نوع البنك", value: bank?.classification },
+          { id: "bank-classification", label: "نوع المؤسسة", value: bank?.classification },
         ]}
       />
     </Page>
